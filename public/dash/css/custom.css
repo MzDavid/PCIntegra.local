@@ -1,0 +1,13 @@
+.drag-drop{
+    background-color: #f5e13a;
+}
+.dropzone-personalized .dz-success, .dz-preview.dz-image-preview {
+    background-color: #95b75d;
+    color: #FFF;
+    width: 50%;
+    margin-bottom: 10px;
+    line-height: 15px;
+    padding: 10px;
+    border: 1px solid #90b456;
+    border-radius: 4px;
+}

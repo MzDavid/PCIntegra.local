@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/.name
+.idea/workspace.xml
+apps/config
+public/api
+public/json
+apps/modules/frontend/Module.php
+apps/modules/dashboard/Module.php
+cd_red.sql
