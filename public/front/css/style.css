@@ -1273,6 +1273,10 @@ h2.h2dev{
     position: relative
 }
 
+.encabezado{
+    background-color: #136497;
+}
+
 .header--topbar {
     text-align: center
 }
@@ -1473,9 +1477,14 @@ h2.h2dev{
     color: #82b440
 }
 
+.page-header--breadcrumb ul li.active{
+    color: #fff;
+}
+
 #pageHeader,
 .checkout--info>p a {
-    color: #222
+    color: #fff;
+    text-shadow: 2px 2px #222;
 }
 
 .page-header--title .h1 {
@@ -1886,11 +1895,17 @@ h2.h2dev{
 }
 
 .valores{
-    padding-bottom: 100px;
+    padding-top: 2em;
 }
 
 .valores p strong{
     color: #d41628;
+}
+
+.valores .col-md-6 img{
+    width: 500px;
+    height: 300px;
+    box-shadow: 4px 4px 10px #222;
 }
 
 #steps {
@@ -1903,7 +1918,7 @@ h2.h2dev{
 
 .step--line {
     position: absolute;
-    top: 408px;
+    top: 106px;
     left: 0;
     right: 0;
     height: 2px;
@@ -3822,7 +3837,7 @@ h2.h2dev{
 }
 
 .contador{
-    background-color: #222;
+    background-color: #136497;
 }
 
 .counter--item {
@@ -3835,18 +3850,23 @@ h2.h2dev{
     margin: -14px 0 2px;
     font-size: 48px;
     line-height: 60px;
-    color: #d41628;
+    color: #fff;
+    text-shadow: 2px 2px #292020;
 }
 
 .counter--item .h3 {
     margin: 0 0 8px;
     font-size: 18px;
-    line-height: 30px
+    line-height: 30px;
+    text-shadow: 2px 2px #292020;
+
 }
 
 .counter--item .fa {
     font-size: 30px;
-    line-height: 42px
+    line-height: 42px;
+    text-shadow: 2px 2px #292020;
+
 }
 
 #counter.counter-box.bg--overlay:before {

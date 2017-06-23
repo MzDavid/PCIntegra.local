@@ -67,7 +67,7 @@
                         <div id="headerNav" class="header--nav navbar-collapse collapse">
                             <ul class="header--nav-links nav navbar-nav">
                                 <li class="active"><a href="/">Inicio</a></li>
-                                <li> <a href="/acerca-de-pc-integra">¿Quienes somos?</a>
+                                <li> <a href="/acerca-de-pc-integra">Nosotros</a>
 
                                 </li>
                                 <li><a href="/">Servicios</a></li>
@@ -153,7 +153,7 @@
                 <div class="footer--menu-wrapper">
                     <ul>
                         <li><a href="#">Inicio</a></li>
-                        <li><a href="#">¿Quiénes Somos?</a></li>
+                        <li><a href="#">Nosotros</a></li>
                         <li><a href="#">Servicios</a></li>
                         <li><a href="#">Experiencia</a></li>
                         <li><a href="#">Comprar</a></li>
