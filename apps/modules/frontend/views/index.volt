@@ -71,7 +71,7 @@
 
                                 </li>
                                 <li><a href="/">Servicios</a></li>
-                                <li class="dropdown megamenu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Experiencia <span class="caret"></span></a>
+                                <li class="dropdown megamenu"> <a href="#">Experiencia</a>
                                 </li>
                                 <li> <a href="/noticias">Blog </a>
                                 </li>

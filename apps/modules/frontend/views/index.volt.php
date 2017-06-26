@@ -67,11 +67,11 @@
                         <div id="headerNav" class="header--nav navbar-collapse collapse">
                             <ul class="header--nav-links nav navbar-nav">
                                 <li class="active"><a href="/">Inicio</a></li>
-                                <li> <a href="/acerca-de-pc-integra">Nosotros</a>
+                                <li> <a href="/acerca-de-pc-integra">¿Quienes somos?</a>
 
                                 </li>
                                 <li><a href="/">Servicios</a></li>
-                                <li class="dropdown megamenu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Experiencia <span class="caret"></span></a>
+                                <li class="dropdown megamenu"> <a href="#">Experiencia</a>
                                 </li>
                                 <li> <a href="/noticias">Blog </a>
                                 </li>
