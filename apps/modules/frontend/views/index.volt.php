@@ -71,7 +71,7 @@
 
                                 </li>
                                 <li><a href="/">Servicios</a></li>
-                                <li class="dropdown megamenu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Experiencia <span class="caret"></span></a>
+                                <li class="dropdown megamenu"> <a href="#">Experiencia</a>
                                 </li>
                                 <li> <a href="/noticias">Blog </a>
                                 </li>
@@ -153,7 +153,7 @@
                 <div class="footer--menu-wrapper">
                     <ul>
                         <li><a href="#">Inicio</a></li>
-                        <li><a href="#">¿Quiénes Somos?</a></li>
+                        <li><a href="#">Nosotros</a></li>
                         <li><a href="#">Servicios</a></li>
                         <li><a href="#">Experiencia</a></li>
                         <li><a href="#">Comprar</a></li>
