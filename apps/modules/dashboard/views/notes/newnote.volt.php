@@ -1,8 +1,8 @@
 <!-- START BREADCRUMB -->
 <ul class="breadcrumb">
     <li><a href="<?= $this->url->get('dashboard') ?>">Inicio</a></li>
-    <li><a href="<?= $this->url->get('dashboard/notes') ?>">Notas</a></li>
-    <li class="active"><a href="#">Nueva Nota</a></li>
+    <li><a href="<?= $this->url->get('dashboard/notes') ?>">Caso de éxito</a></li>
+    <li class="active"><a href="#">Nueva caso de éxito</a></li>
 </ul>
 <!-- PAGE TITLE -->
 <div class="page-title">
@@ -12,7 +12,7 @@
 <div class="page-content-wrap">
     <div class="row">
         <div class="col-md-12">
-            <h4 class="text-title">Crear Nueva Nota</h4>
+            <h4 class="text-title">Crear Nuevo Caso de Éxito</h4>
             <div class="col-md-12 col-xs-12 panel-body form-group-separated">
                 <form action="#" method="post" id="newNote" name="newNote"role="form" class="form-horizontal">
                     <span class="hide" id="key-security" data-key="<?php echo $this->security->getToken(); ?>"></span>
@@ -49,10 +49,10 @@
                         <div class="clearfix"></div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-2 col-xs-12 control-label">Sumario</label>
+                        <label class="col-md-2 col-xs-12 control-label">Resumen</label>
                         <div class="col-md-8 col-xs-12">
                             <textarea class="form-control" name="summary" id="" cols="10" rows="5"></textarea>
-                            <p>Introduzca un texto de introducción para la nota.</p>
+                            <p>Introduzca un texto de resumen para el caso de exito.</p>
                         </div>
                     </div>
                     <div class="form-group">
@@ -73,7 +73,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group hidden">
                         <label class="col-md-2 col-xs-12 control-label">Tipo de Nota</label>
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <select id="typeNote" name="type" class="form-control" required>
@@ -83,7 +83,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <!--div class="form-group">
                         <label class="col-md-2 col-xs-12 control-label">Categoría</label>
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <select id="cid" name="category" class="form-control" required multiple="multiple">
@@ -101,7 +101,7 @@
                             <select id='scid' name='subcategory' class='form-control' required multiple="multiple">
                             </select>
                         </div>
-                    </div>
+                    </div-->
                     <div class="form-group">
                         <div class="col-md-6 col-md-offset-2">
                             <input type="submit" class="btn btn-success" value="Guardar"/>

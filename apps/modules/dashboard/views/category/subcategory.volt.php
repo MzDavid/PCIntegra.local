@@ -1,14 +1,14 @@
 <!-- START BREADCRUMB -->
 <ul class="breadcrumb">
-    <li><a href="<?php echo $this->url->get(''); ?>">Inicio</a></li>
+    <li><a href="<?= $this->url->get('') ?>">Inicio</a></li>
     <li>Categorías</li>
-    <li class="active"><?php echo $params[1]; ?></li>
+    <li class="active"><?= $params[1] ?></li>
 </ul>
 <!-- END BREADCRUMB -->
 <!-- PAGE TITLE -->
 <div class="page-title">
     <div class="col-xs-12 col-sm-12 col-md-6">
-        <h2><a href="<?php echo $this->url->get('dashboard/category'); ?>"><span class="fa fa-arrow-circle-o-left"></span></a> Menú principal</h2>
+        <h2><a href="<?= $this->url->get('dashboard/category') ?>"><span class="fa fa-arrow-circle-o-left"></span></a> Menú principal</h2>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-6">
         <h2 style="float: none" class="text-right"><a data-toggle="modal" data-target="#modal_basic" href="#"><span class="fa fa-plus"></span> Nueva subcategoría</a></h2>
@@ -22,7 +22,7 @@
             <!-- START DEFAULT DATATABLE -->
             <div class="panel panel-success">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Subcategoría <?php echo $params[1]; ?></h3>
+                    <h3 class="panel-title">Subcategoría <?= $params[1] ?></h3>
                     <ul class="panel-controls">
                         <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
                         <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
@@ -41,11 +41,11 @@
                             <tbody>
                             <?php if(count($subcategories)>0):?>
                                 <?php foreach ($subcategories as $values) { ?>
-                                <tr id="<?php echo $values->getScid(); ?>">
-                                    <td class="nameCategory"><?php echo $values->getSubcategoryname(); ?></td>
+                                <tr id="<?= $values->getScid() ?>">
+                                    <td class="nameCategory"><?= $values->getSubcategoryname() ?></td>
                                     <td>
-                                        <a href="#" data-cgid="<?php echo $values->getScid(); ?>" data-namec="<?php echo $values->getSubcategoryname(); ?>" class="btn btn-default btn-rounded btn-sm btn-edit"><span class="fa fa-pencil"></span></a>
-                                        <button class="btn btn-danger btn-rounded btn-sm" onclick="delete_subcategory('<?php echo $values->getScid(); ?>');"><span class="fa fa-times"></span></button>
+                                        <a href="#" data-cgid="<?= $values->getScid() ?>" data-namec="<?= $values->getSubcategoryname() ?>" class="btn btn-default btn-rounded btn-sm btn-edit"><span class="fa fa-pencil"></span></a>
+                                        <button class="btn btn-danger btn-rounded btn-sm" onclick="delete_subcategory('<?= $values->getScid() ?>');"><span class="fa fa-times"></span></button>
                                     </td>
                                 </tr>
                                 <?php } ?>
@@ -72,7 +72,7 @@
             <span class="hide" id="key-security" data-key="<?php echo $this->security->getToken(); ?>"></span>
             <span class="hide" id="value-security" data-value="<?php echo $this->security->getTokenKey(); ?>"></span>
             <form id="newSubCategory" action="#" method="post" rol="form" class="form-horizontal">
-                <input type="hidden" id="cgid" name="cgid" value="<?php echo $params[0]; ?>">
+                <input type="hidden" id="cgid" name="cgid" value="<?= $params[0] ?>">
                 <div class="modal-body">
                     <div class="form-group">
                         <div class="col-md-6 col-md-offset-3">

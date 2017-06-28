@@ -74,7 +74,7 @@ class NotesController extends ControllerBase{
                  ->setDescriptionImage($request->getPost('descriptionI'))
                  ->setIsGallery(0)
                  ->setUid($auth['uid'])
-                 ->setScid($request->getPost("subcategory"))
+                 ->setScid(31)
                  ->setType($request->getPost("type"));
              if($note->save()){
                  $this->response(array("message"=>"SUCCESS","code"=>200),200);

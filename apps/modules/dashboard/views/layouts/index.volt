@@ -77,10 +77,10 @@
                     <a href="{{url('dashboard')}}"><span class="fa fa-desktop"></span> <span class="xn-text">Menú principal</span></a>
                 </li>
                 <li class="xn-openable <?php echo $this->router->getControllerName()=='notes'?"active":""?>">
-                    <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">Sección Noticias</span></a>
+                    <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">Casos de Éxito</span></a>
                     <ul>
-                        <li class="<?php echo $this->router->getActionName()=='newnote'?"active":""?>"><a href="{{url('dashboard/notes/new-note')}}"><span class="fa fa-pencil"></span> Nueva noticia</a></li>
-                        <li class="<?php echo $this->router->getActionName()=='index'?"active":""?>"><a href="{{url('dashboard/notes')}}"><span class="fa fa-file"></span> Todas las noticias</a></li>
+                        <li class="<?php echo $this->router->getActionName()=='newnote'?"active":""?>"><a href="{{url('dashboard/notes/new-note')}}"><span class="fa fa-pencil"></span> Nuevo caso de éxito</a></li>
+                        <li class="<?php echo $this->router->getActionName()=='index'?"active":""?>"><a href="{{url('dashboard/notes')}}"><span class="fa fa-file"></span> Todas los casos de éxito</a></li>
                         <li class="<?php echo $this->router->getActionName()=='draft'?"active":""?>"><a href="{{url('dashboard/notes/draft')}}"><span class="fa fa-file-text-o"></span> Borradores</a></li>
                     </ul>
                 </li>
@@ -94,10 +94,10 @@
                 <li class="xn-openable <?php echo $this->router->getControllerName()=='category' || $this->router->getControllerName()=='advertising'?"active":""?>">
                     <a href="#"><span class="fa fa-cogs"></span> <span class="xn-text">Otras Secciones</span></a>
                     <ul>
-                        <li class="<?php echo $this->router->getActionName()=='index' && $this->router->getControllerName()=='category'?"active":""?>"><a href="{{url('dashboard/category')}}"><span class="fa fa-list-ul"></span>Categorías</a></li>
+                        <!--li class="<?php echo $this->router->getActionName()=='index' && $this->router->getControllerName()=='category'?"active":""?>"><a href="{{url('dashboard/category')}}"><span class="fa fa-list-ul"></span>Categorías</a></li-->
                         <li class="<?php echo $this->router->getActionName()=='index' && $this->router->getControllerName()=='slider'?"active":""?>"><a href="{{url('dashboard/slider')}}"><span class="fa fa-tags"></span> Slider</a></li>
-                        <li class="<?php echo $this->router->getActionName()=='index' && $this->router->getControllerName()=='opinion'?"active":""?>"><a href="{{url('dashboard/opinion')}}"><span class="fa fa-list-ul"></span>Testimoniales</a></li>
-                        <li class="<?php echo $this->router->getActionName()=='index' && $this->router->getControllerName()=='opinion'?"active":""?>"><a href="{{url('dashboard/video/index')}}"><span class="fa fa-list-ul"></span>Videos</a></li>
+                        <!--li class="<?php echo $this->router->getActionName()=='index' && $this->router->getControllerName()=='opinion'?"active":""?>"><a href="{{url('dashboard/opinion')}}"><span class="fa fa-list-ul"></span>Testimoniales</a></li>
+                        <li class="<?php echo $this->router->getActionName()=='index' && $this->router->getControllerName()=='opinion'?"active":""?>"><a href="{{url('dashboard/video/index')}}"><span class="fa fa-list-ul"></span>Videos</a></li-->
                     </ul>
                 </li>
                 <li class="xn-openable <?php echo $this->router->getControllerName()=='user'?"active":""?>">
@@ -182,105 +182,5 @@
             });
         }
     </script>
-<!--script>
-
-    gapi.analytics.ready(function() {
-
-        /**
-         * Authorize the user immediately if the user has already granted access.
-         * If no access has been created, render an authorize button inside the
-         * element with the ID "embed-api-auth-container".
-         */
-        gapi.analytics.auth.authorize({
-            container: 'embed-api-auth-container',
-            clientid: '537696715225-g5vn55lalccu7smv0ljhk094hqf6sev6.apps.googleusercontent.com'
-        });
-
-
-        /**
-         * Create a new ViewSelector instance to be rendered inside of an
-         * element with the id "view-selector-container".
-         */
-        var viewSelector = new gapi.analytics.ViewSelector({
-            container: 'view-selector-container'
-        });
-
-
-
-        /**
-         * Create a ViewSelector for the first view to be rendered inside of an
-         * element with the id "view-selector-1-container".
-         */
-        var viewSelector1 = new gapi.analytics.ViewSelector({
-            container: 'view-selector-1-container'
-        });
-
-        // Render the view selector to the page.
-        viewSelector.execute();
-
-        // Render both view selectors to the page.
-        viewSelector1.execute();
-
-
-
-        /**
-         * Create the first DataChart for top countries over the past 30 days.
-         * It will be rendered inside an element with the id "chart-1-container".
-         */
-        /**
-         * Create a new DataChart instance with the given query parameters
-         * and Google chart options. It will be rendered inside an element
-         * with the id "chart-container".
-         */
-        var dataChart = new gapi.analytics.googleCharts.DataChart({
-            query: {
-                metrics: 'ga:sessions',
-                dimensions: 'ga:date',
-                'start-date': '30daysAgo',
-                'end-date': 'yesterday'
-            },
-            chart: {
-                container: 'chart-container',
-                type: 'LINE',
-                options: {
-                    width: '100%'
-                }
-            }
-        });
-
-
-        var dataChart1 = new gapi.analytics.googleCharts.DataChart({
-            query: {
-                metrics: 'ga:sessions',
-                dimensions: 'ga:country',
-                'start-date': '30daysAgo',
-                'end-date': 'yesterday',
-                'max-results': 6,
-                sort: '-ga:sessions'
-            },
-            chart: {
-                container: 'chart-1-container',
-                type: 'PIE',
-                options: {
-                    width: '100%',
-                    pieHole: 4/9
-                }
-            }
-        });
-
-        /**
-         * Update the first dataChart when the first view selecter is changed.
-         */
-        viewSelector1.on('change', function(ids) {
-            dataChart1.set({query: {ids: ids}}).execute();
-        });
-        /**
-         * Render the dataChart on the page whenever a new view is selected.
-         */
-        viewSelector.on('change', function(ids) {
-            dataChart.set({query: {ids: ids}}).execute();
-        });
-    });
-</script-->
 </body
 </html>
