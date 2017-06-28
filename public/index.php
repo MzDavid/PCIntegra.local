@@ -145,11 +145,11 @@ $di->set('router', function(){
         'controller' => 'carrer',
         'action' => 'index',
     ));
-    $router->add("/noticias", array(
+    $router->add("/casos-de-exito", array(
         'controller' => 'blog',
         'action' => 'index',
     ));
-    $router->add('/noticias/([0-9-a-zA-Z\-]+)', array(
+    $router->add('/casos-de-exito/([0-9-a-zA-Z\-]+)', array(
         'module'=>'frontend',
         'permalink' => 1,
         'controller' => 'blog',

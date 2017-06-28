@@ -2191,7 +2191,7 @@ h2.h2dev{
     border-color: #82b440
 }
 
-//Custom styles
+/*Custom styles*/
 
 .galeria{
     padding: 100px 0;
@@ -4502,6 +4502,9 @@ a.url--noticia:hover{
 }
 
 .brand--img {
+    height: 131px;
+    display: flex;
+    align-items: center;
     padding: 15px;
     border: 1px solid #eaeaea;
     -webkit-transition: border-color .25s, box-shadow .25s ease-in-out;

@@ -73,7 +73,7 @@
                                 <li><a href="/">Servicios</a></li>
                                 <li class="dropdown megamenu"> <a href="#">Experiencia</a>
                                 </li>
-                                <li> <a href="/noticias">Blog </a>
+                                <li> <a href="/casos-de-exito">Casos de Exito </a>
                                 </li>
                                 <li><a href="/contactanos">Contacto</a></li>
                             </ul>

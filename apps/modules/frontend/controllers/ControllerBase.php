@@ -12,6 +12,7 @@ class ControllerBase extends Controller
             ->setTargetPath("front/js/general.min.js")
             ->setTargetUri("front/js/general.min.js")
             ->addJs("front/js/jquery-3.1.0.min.js")
+            ->addJs("front/js/images-grid.js")
             ->addJs("front/js/bootstrap.min.js")
             ->addJs("front/js/fakeLoader.min.js")
             ->addJs("front/js/isotope.min.js")
