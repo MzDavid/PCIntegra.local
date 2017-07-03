@@ -21,6 +21,11 @@ class ControllerBase extends Controller
             ->addJs("front/js/jquery.validate.min.js")
             ->addJs("front/js/jquery.waypoints.min.js")
             ->addJs("front/js/jquery.counterup.min.js")
+
+            ->addJs("front/js/bootstrapV/formValidation.min.js")
+            ->addJs("front/js/bootstrapV/bootstrapV.min.js")
+            ->addJs("front/js/bootstrapV/es_ES.js")
+
             ->addJs("front/js/retina.min.js")
             ->addJs("front/js/main.js")
             ->addJs("front/js/pcintegra.js")

@@ -73,9 +73,9 @@
                                 <li><a href="/">Servicios</a></li>
                                 <li class="dropdown megamenu"> <a href="#">Experiencia</a>
                                 </li>
-                                <li> <a href="/noticias">Blog </a>
+                                <li> <a href="/noticias">Casos de éxito </a>
                                 </li>
-                                <li><a href="/contactanos">Contacto</a></li>
+                                <li><a href="/contactanos">Contactanos</a></li>
                             </ul>
                         </div>
                     </div>

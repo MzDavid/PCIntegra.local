@@ -1,7 +1,7 @@
 <ul class="breadcrumb">
     <li><a href="<?= $this->url->get('dashboard') ?>">Inicio</a></li>
-    <li><a href="<?= $this->url->get('dashboard/careers/index') ?>">Careras</a></li>
-    <li class="active"><a href="#">Editar carrera</a></li>
+    <li><a href="<?= $this->url->get('dashboard/careers/index') ?>">Servicios</a></li>
+    <li class="active"><a href="#">Editar servicio</a></li>
 </ul>
 <div class="page-title">
     <h2><a href="<?= $this->url->get('dashboard/careers') ?>"><span class="fa fa-arrow-circle-o-left"></span></a>  Salir</h2>
@@ -9,15 +9,15 @@
 <div class="page-content-wrap">
     <div class="row">
         <div class="col-md-12">
-            <h4 class="text-title">Editando carrera</h4>
+            <h4 class="text-title">Editando servicio</h4>
             <div class="col-md-12 col-xs-12 panel-body form-group-separated">
                 <form action="#" method="post" id="updateCareer" name="updateCareer" role="form" class="form-horizontal">
                     <input type="hidden" value="<?= $note->getCrid() ?>" id="crid" name="crid"/>
                     <div class="form-group">
-                        <label class="col-md-2 col-xs-12 control-label">Titulo</label>
+                        <label class="col-md-2 col-xs-12 control-label">Nombre</label>
                         <div class="col-md-8 col-xs-12">
                             <?php $new_title = str_replace('\'', '"', $note->getName());?>
-                            <input id="note-title" type="text" class="form-control" placeholder="Titulo" name="title" value='<?= $new_title ?>' readonly/>
+                            <input id="note-title" type="text" class="form-control" placeholder="Nombre" name="title" value='<?= $new_title ?>'/>
                             <i id="input-loader" class="fa fa-spinner fa-spin fade in hide"></i>
                         </div>
                     </div>
@@ -28,7 +28,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-2 col-xs-12 control-label">Información</label>
+                        <label class="col-md-2 col-xs-12 control-label">Resumen</label>
                         <div class="col-md-8 col-xs-12">
                             <div class="block">
                                 <textarea class="summercareers" name="information" cols="30" rows="10"><?= $note->getInformation() ?></textarea>
@@ -43,7 +43,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <!--div class="form-group">
                         <label class="col-md-2 col-xs-12 control-label">Plan de Estudio (PDF)</label>
                         <div class="col-md-8 col-xs-12">
                             <div id="sendMailPersonal" class="dropzone-personalized dz-default dz-message">
@@ -57,7 +57,7 @@
                             </div>
                             <span>Máximo 1 archivo y no mayor a 15 MB</span>
                         </div>
-                    </div>
+                    </div-->
                     <div class="form-group">
                         <label class="col-md-2 col-xs-12 control-label">Video</label>
                         <div class="col-md-8 col-xs-12">

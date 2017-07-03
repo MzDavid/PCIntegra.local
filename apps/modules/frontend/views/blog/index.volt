@@ -8,7 +8,7 @@
                         <div class="post--header"><h2 class="post--title"><a href="/noticias/{{sub.getPermalink()}}">{{sub.getTitle()}}</a></h2>
 
                             <div class="post--meta"><span>Posted By <a href="/noticias/{{sub.getPermalink()}}">Admin</a></span> <span
-                                    class="divider">|</span> <span><a href="/noticias/{{sub.getPermalink()}}">{{sub.getDatePublic()}}</a></span>
+                                    class="divider">|</span> <span><a href="/noticias/{{sub.getPermalink()}}">{{sub.getDatePublic()}}ffff33</a></span>
                             </div>
                         </div>
                         <div class="post--img"><img src="/dash/img/notes/{{sub.getImage()}}" alt="" data-rjs="2"></div>

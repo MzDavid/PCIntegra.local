@@ -1,6 +1,6 @@
 <ul class="breadcrumb">
     <li><a href="{{url('')}}">Inicio</a></li>
-    <li class="active">Notas</li>
+    <li class="active">Casos de Éxito</li>
 </ul>
 <div class="page-title">
     <h2><a href="{{url('dashboard')}}"><span class="fa fa-arrow-circle-o-left"></span></a> Menú principal</h2>
@@ -10,7 +10,7 @@
         <div class="col-md-12">
              <div class="panel panel-success">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Notas</h3>
+                    <h3 class="panel-title">Casos de Éxito</h3>
                     <ul class="panel-controls">
                         <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
                         <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
@@ -23,10 +23,7 @@
                             <thead>
                                 <tr>
                                     <th>Titulo</th>
-                                    <th>Autor</th>
-                                    <th>Categoría</th>
-                                    <th>Subcategoria</th>
-                                    <th>Fecha creación</th>
+                                    <th>Resumen</th>
                                     <th>Opciones</th>
                                 </tr>
                             </thead>
@@ -38,10 +35,7 @@
                                 ?>
                                 <tr id="{{values.getPid()}}">
                                     <td>{{values.getTitle()}}</td>
-                                    <td>{{values.getUsername()}}</td>
-                                    <td>{{values.getNameCategory()}}</td>
-                                    <td>{{values.getSubcategoryname()}}</td>
-                                    <td>{{newDate}}</td>
+                                    <td>{{values.getSummary()}}</td>
                                     <td>
                                         <a href="{{url('dashboard/notes/edit-note?pid=')}}{{values.getPid()}}" class="btn btn-default btn-rounded btn-sm"><span class="fa fa-pencil"></span></a>
                                         <button class="btn btn-danger btn-rounded btn-sm" onclick="delete_row('{{values.getPid()}}');"><span class="fa fa-times"></span></button>

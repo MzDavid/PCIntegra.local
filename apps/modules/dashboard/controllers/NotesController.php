@@ -100,9 +100,6 @@ class NotesController extends ControllerBase{
         $auth = $this->auth();
         $request = $this->request;
         if($request->isPost() && $request->isAjax() && $auth ){
-             $dateP = $request->getPost("dateP");
-             $newDate = explode("/",$dateP);
-             $newDate = $newDate["2"]."-".$newDate["1"]."-".$newDate["0"];
              $note = new CdPost();
              $find = $note->findFirst($request->getPost("pid"));
              $find->setTitle(str_replace('\'', '"',$request->getPost("title")))
@@ -112,10 +109,8 @@ class NotesController extends ControllerBase{
                  ->setContent($request->getPost("content"))
                  ->setStatus($request->getPost('status'))
                  ->setDescriptionImage($request->getPost('descriptionI'))
-                 ->setDatePublic($newDate)
                  ->setIsGallery(0)
                  ->setUid($auth['uid'])
-                 ->setScid($request->getPost("subcategory"))
                  ->setType($request->getPost("type"));
              if($find->update()){
                  $this->response(array("message"=>"SUCCESS","code"=>200),200);

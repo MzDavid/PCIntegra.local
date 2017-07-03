@@ -1,22 +1,16 @@
-<!-- START BREADCRUMB -->
 <ul class="breadcrumb">
     <li><a href="<?= $this->url->get('') ?>">Inicio</a></li>
-    <li class="active">Notas</li>
+    <li class="active">Caso de éxito</li>
 </ul>
-<!-- END BREADCRUMB -->
-<!-- PAGE TITLE -->
 <div class="page-title">
     <h2><a href="<?= $this->url->get('dashboard') ?>"><span class="fa fa-arrow-circle-o-left"></span></a> Menú principal</h2>
 </div>
-<!-- END PAGE TITLE -->
-<!-- PAGE CONTENT WRAPPER -->
 <div class="page-content-wrap">
     <div class="row">
         <div class="col-md-12">
-            <!-- START DEFAULT DATATABLE -->
             <div class="panel panel-success">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Notas</h3>
+                    <h3 class="panel-title">Borradores de caso de éxito</h3>
                     <ul class="panel-controls">
                         <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
                         <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
@@ -59,12 +53,9 @@
                     </div>
                 </div>
             </div>
-            <!-- END DEFAULT DATATABLE -->
         </div>
     </div>
 </div>
-<!-- PAGE CONTENT WRAPPER -->
-<!-- MESSAGE BOX-->
 <div class="message-box animated fadeIn" data-sound="alert" id="mb-remove-row">
     <div class="mb-container">
         <div class="mb-middle">
@@ -82,4 +73,3 @@
         </div>
     </div>
 </div>
-<!-- END MESSAGE BOX-->

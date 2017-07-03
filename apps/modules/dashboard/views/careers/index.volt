@@ -1,6 +1,6 @@
 <ul class="breadcrumb">
     <li><a href="{{url('')}}">Inicio</a></li>
-    <li class="active">Notas</li>
+    <li class="active">Servicios</li>
 </ul>
 <div class="page-title">
     <h2><a href="{{url('dashboard')}}"><span class="fa fa-arrow-circle-o-left"></span></a> Menú principal</h2>
@@ -10,7 +10,7 @@
         <div class="col-md-12">
             <div class="panel panel-success">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Notas</h3>
+                    <h3 class="panel-title">Servicios</h3>
                     <ul class="panel-controls">
                         <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
                         <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>

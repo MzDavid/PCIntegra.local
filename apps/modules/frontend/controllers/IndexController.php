@@ -73,12 +73,11 @@ class IndexController extends ControllerBase
     {
         $request = $this->request;
         if($request->isAjax() && $request->isPost()){
-            $email = $request->getPost('email');
-            $name  = $request->getPost('name');
-            $phone = $request->getPost('phone');
-            $subject = $request->getPost('subject');
-            $msg = $request->getPost('msg');
-            if($this->SendEmail($email)&& $this->SendEmailAccount($email,$name,$msg,$subject,$phone)){
+            $email = $request->getPost('contactEmail');
+            $name  = $request->getPost('contactName');
+            $phone = $request->getPost('contactSubject');
+            $msg = $request->getPost('contactMessage');
+            if($this->SendEmail($email)&& $this->SendEmailAccount($email,$name,$msg,$phone)){
                 $this->response(array("code"=>200,"message"=>"data-saved"),200);
             }else{
                 $this->response(array("code"=>404,"message"=>"No se ha podido enviar"),200);
@@ -102,15 +101,15 @@ class IndexController extends ControllerBase
         $email->Username = "chontaldevelopers@gmail.com";
         $email->Password = "gustavo290387";
 
-        $email->setFrom("chontaldevelopers@gmail.com","Universidad Más Educación y Enseñanza");
-        $email->addReplyTo("dtoledo@umaee.com","Universidad Más Educación y Enseñanza");
+        $email->setFrom("gustavo.alberto@c-developers.com","PCIntegra");
+        $email->addReplyTo("gustavo.alberto@c-developers.com","PCIntegra");
         $email->addAddress("$account");
         $email->isHTML(true);
 
-        $email->Subject = "Universidad Más Educación y Enseñanza";
+        $email->Subject = "PCIntegra";
         $file = dirname(__DIR__)."/views/email/index.html";
         $email->msgHTML(file_get_contents($file));
-        $email->AltBody = "Gracias por contactarnos en breve nos comunicaremos con usted. Les agradece UMAEE.";
+        $email->AltBody = "Gracias por contactarnos en breve nos comunicaremos con usted. Les agradece PCIntegra.";
         if(!$email->send()) {
             echo 'Message could not be sent.';
             echo 'Mailer Error: ' . $email->ErrorInfo;
@@ -118,7 +117,7 @@ class IndexController extends ControllerBase
             return true;
         }
     }
-    public function SendEmailAccount($account,$name,$message,$altBody,$phone){
+    public function SendEmailAccount($account,$name,$message,$phone){
         $email = new \PHPMailer();
         $email->isSMTP();
         $email->CharSet = 'UTF-8';
@@ -132,18 +131,18 @@ class IndexController extends ControllerBase
         $email->Username = "chontaldevelopers@gmail.com";
         $email->Password = "gustavo290387";
 
-        $email->setFrom("$account","Universidad Más Educación y Enseñanza");
-        $email->addReplyTo("dtoledo@umaee.com","Universidad Más Educación y Enseñanza");
-        $email->addAddress("dtoledo@umaee.com");
+        $email->setFrom("$account","PCIntegra");
+        $email->addReplyTo("gustavo.alberto@c-developers.com","PCIntegra");
+        $email->addAddress("gustavo.alberto@c-developers.com");
 
         $email->WordWrap =100;
         $email->isHTML(true);
 
-        $email->Subject = "Contacto pagina web de UMAEE";
-        $html = "<!DOCTYPE html><html><head><meta charset='utf-8'><title>Universidad Más Educación y Enseñanza</title></head><body><style type='text/css'>p,strong {font-family: sans-serif;font-size: 14px;}</style><p><strong>Asunto : </strong> $altBody</p><p><strong>Nombre : </strong> $name</p><p><strong>Email : </strong> $account</p><p><strong>Teléfono : </strong> $phone</p><p><strong>Mensaje : </strong> $message</p></body></html>";
+        $email->Subject = "Contacto pagina web de PCIntegra";
+        $html = "<!DOCTYPE html><html><head><meta charset='utf-8'><title>PCIntegra</title></head><body><style type='text/css'>p,strong {font-family: sans-serif;font-size: 14px;}</style><p><strong>Nombre : </strong> $name</p><p><strong>Email : </strong> $account</p><p><strong>Teléfono : </strong> $phone</p><p><strong>Mensaje : </strong> $message</p></body></html>";
         
         $email->msgHTML($html);
-        $email->AltBody = "$altBody";
+        $email->AltBody = "Mensaje de Formulario";
 
         if(!$email->send()) {
             echo 'Message could not be sent.';

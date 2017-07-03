@@ -8,7 +8,7 @@ class CareersController extends ControllerBase
     public function indexAction(){
         $auth = $this->auth();
         if($auth){
-            $allCarrers = CdCareers::find("status='ACTIVO' and type='UMAEE'");
+            $allCarrers = CdCareers::find("status='ACTIVO'");
             if($auth['rol']=="ADMIN"){
                 $this->view->setVar("allcarrers",$allCarrers);
             }else{$this->response(array("message"=>"error try again","code"=>"404"),200);}
@@ -19,6 +19,7 @@ class CareersController extends ControllerBase
     public function newAction(){
         $auth = $this->auth();
         if($auth){
+            $this->scripts();
             $this->view->setVar("category",json_decode($this->getCategory(),true));
         }else{
             exit();
@@ -41,20 +42,14 @@ class CareersController extends ControllerBase
         $request = $this->request;
         if($request->isPost() && $request->isAjax() && $auth ){
             $note = new CdCareers();
-            $note->setTitle(str_replace('\'', '"',$request->getPost("title")))
-                ->setImage($request->getPost("image"))
+            $note->setName(str_replace('\'', '"',$request->getPost("title")))
                 ->setPermalink($request->getPost("permalink"))
-                ->setSummary($request->getPost("summary"))
-                ->setContent($request->getPost("content"))
-                ->setStatus($request->getPost('status'))
-                ->setVisits(0)
-                ->setDateCreation(date('Y-m-d H:i:s'))
-                ->setDatePublic(date('Y-m-d H:i:s'))
-                ->setDescriptionImage($request->getPost('descriptionI'))
-                ->setIsGallery(0)
+                ->setInformation($request->getPost("information"))
+                ->setQuestion($request->getPost("question"))
+                ->setVideo($request->getPost('video'))
                 ->setUid($auth['uid'])
-                ->setScid($request->getPost("subcategory"))
-                ->setType($request->getPost("type"));
+                ->setOrderCrid(0)
+                ->setCategory("LICENCIATURA");
             if($note->save()){
                 $this->response(array("message"=>"SUCCESS","code"=>200),200);
             }else{

@@ -86,9 +86,10 @@
                 </li>
 
                 <li class="xn-openable <?php echo $this->router->getControllerName()=='careers'?"active":""?>">
-                    <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">Sección Oferta Educativa</span></a>
+                    <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">Servicios</span></a>
                     <ul>
-                        <li class="<?php echo $this->router->getActionName()=='index'?"active":""?>"><a href="{{url('dashboard/careers/index')}}"><span class="fa fa-file"></span> Todas las carreras</a></li>
+                        <li class="<?php echo $this->router->getActionName()=='new'?"active":""?>"><a href="{{url('dashboard/careers/new')}}"><span class="fa fa-file"></span> Nuevo servicio</a></li>
+                        <li class="<?php echo $this->router->getActionName()=='index'?"active":""?>"><a href="{{url('dashboard/careers/index')}}"><span class="fa fa-file"></span> Todos los servicios</a></li>
                     </ul>
                 </li>
                 <li class="xn-openable <?php echo $this->router->getControllerName()=='category' || $this->router->getControllerName()=='advertising'?"active":""?>">

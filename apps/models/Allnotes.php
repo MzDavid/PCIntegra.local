@@ -20,6 +20,13 @@ class Allnotes extends \Phalcon\Mvc\Model
     /**
      *
      * @var string
+     * @Column(type="string", length=100, nullable=false)
+     */
+    protected $summary;
+
+    /**
+     *
+     * @var string
      * @Column(type="string", nullable=false)
      */
     protected $date_creation;
@@ -88,6 +95,19 @@ class Allnotes extends \Phalcon\Mvc\Model
     public function setTitle($title)
     {
         $this->title = $title;
+
+        return $this;
+    }
+
+    /**
+     * Method to set the value of field summary
+     *
+     * @param string $summary
+     * @return $this
+     */
+    public function setSummary($summary)
+    {
+        $this->summary = $summary;
 
         return $this;
     }
@@ -201,6 +221,16 @@ class Allnotes extends \Phalcon\Mvc\Model
     public function getTitle()
     {
         return $this->title;
+    }
+
+    /**
+     * Returns the value of field summary
+     *
+     * @return string
+     */
+    public function getSummary()
+    {
+        return $this->summary;
     }
 
     /**

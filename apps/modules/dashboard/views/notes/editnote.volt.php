@@ -61,18 +61,6 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="clearfix"></div>
-                        <label class="col-md-2 col-xs-12 control-label">Fecha de publicación</label>
-                        <div class="col-md-4 col-sm-6 col-xs-12 date" id="dateTop">
-                            <?php
-                                $dateC= $note->getDatePublic();
-                                $newDate = date("d/m/Y", strtotime($dateC));
-                            ?>
-                            <input type="text" class="form-control" id="datepicker" name="dateP" value="<?= $newDate ?>">
-                            <div id="element"></div>
-                        </div>
-                    </div>
-                    <div class="form-group">
                         <label class="col-md-2 col-xs-12 control-label">Estatus</label>
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <select id="status" name="status" class="form-control" required>
@@ -81,7 +69,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group hidden">
                         <label class="col-md-2 col-xs-12 control-label">Tipo de Nota</label>
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <select id="typeNote" name="type" class="form-control" required>
@@ -91,7 +79,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <!--div class="form-group">
                         <label class="col-md-2 col-xs-12 control-label">Categoría</label>
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <select id="cid" name="category" class="form-control" required multiple>
@@ -116,7 +104,7 @@
                                 <?php endforeach;?>
                             </select>
                         </div>
-                    </div>
+                    </div-->
                     <div class="form-group">
                         <div class="col-md-6 col-md-offset-2">
                             <input type="submit" class="btn btn-success" value="Guardar"/>
