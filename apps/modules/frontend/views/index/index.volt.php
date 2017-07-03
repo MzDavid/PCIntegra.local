@@ -24,20 +24,24 @@
             <div class="service-tab--nav col-md-6">
                 <ul class="bg--color-lightgray row">
                     <li class="col-md-6">
-                        <div data-toggle="tab" data-target="#servicesTabItem01"> <i class="fa fa-server"></i>
-                            <h3 class="h3">Integración de Servidores y Redes</h3></div>
+                        <div data-toggle="tab" data-target="#servicesTabItem01"> 
+                        <div class="item"><i class="fa fa-server"></i>
+                            <h3 class="h3">Integración de Servidores y Redes</h3></div></div>
                     </li>
                     <li class="col-md-6">
-                        <div data-toggle="tab" data-target="#servicesTabItem02"> <i class="fa fa-sitemap"></i>
-                            <h3 class="h3">Cableado Estructurado</h3></div>
+                        <div data-toggle="tab" data-target="#servicesTabItem02">
+                        <div class="item"> <i class="fa fa-sitemap"></i>
+                            <h3 class="h3">Cableado Estructurado</h3></div></div>
                     </li>
                     <li class="col-md-6">
-                        <div data-toggle="tab" data-target="#servicesTabItem03"> <i class="fa fa-phone"></i>
-                            <h3 class="h3">Telefónia Convecional Voz IP</h3></div>
+                        <div data-toggle="tab" data-target="#servicesTabItem03"> 
+                        <div class="item"><i class="fa fa-phone"></i>
+                            <h3 class="h3">Telefónia Convecional Voz IP</h3></div></div>
                     </li>
                     <li class="col-md-6 active">
-                        <div data-toggle="tab" data-target="#servicesTabItem04"> <i class="fa fa-video-camera"></i>
-                            <h3 class="h3"> Sistema de Video Vigilancia </h3></div>
+                        <div data-toggle="tab" data-target="#servicesTabItem04"> 
+                        <div class="item"><i class="fa fa-video-camera"></i>
+                            <h3 class="h3"> Sistema de Video Vigilancia </h3></div></div>
                     </li>
                 <p class="text-center"><a href="service-single.html" class="btn-link">Ver Más</a> </p>
                 </ul>
@@ -172,51 +176,31 @@
     <div class="container">
         <div class="section--title text-center">
             <h2 class="h2">Marcas que Trabajamos</h2> </div>
-        <div class="row">
-            <div class="brand--item col-md-2 col-sm-3 col-xs-6">
-                <div class="brand--img"> <img src="/front/img/brands-img/brand-01.png" alt="" class="center-block" data-rjs="2"> </div>
-            </div>
-            <div class="brand--item col-md-2 col-sm-3 col-xs-6">
-                <div class="brand--img"> <img src="/front/img/brands-img/brand-02.png" alt="" class="center-block" data-rjs="2"> </div>
-            </div>
-            <div class="brand--item col-md-2 col-sm-3 col-xs-6">
-                <div class="brand--img"> <img src="/front/img/brands-img/brand-03.png" alt="" class="center-block" data-rjs="2"> </div>
-            </div>
-            <div class="brand--item col-md-2 col-sm-3 col-xs-6">
-                <div class="brand--img"> <img src="/front/img/brands-img/brand-04.png" alt="" class="center-block" data-rjs="2"> </div>
-            </div>
-            <div class="brand--item col-md-2 col-sm-3 col-xs-6">
-                <div class="brand--img"> <img src="/front/img/brands-img/brand-05.png" alt="" class="center-block" data-rjs="2"> </div>
-            </div>
-            <div class="brand--item col-md-2 col-sm-3 col-xs-6">
-                <div class="brand--img"> <img src="/front/img/brands-img/brand-06.png" alt="" class="center-block" data-rjs="2"> </div>
-            </div>
-            <div class="brand--item col-md-2 col-sm-3 col-xs-6">
-                <div class="brand--img"> <img src="/front/img/brands-img/brand-07.png" alt="" class="center-block" data-rjs="2"> </div>
-            </div>
-            <div class="brand--item col-md-2 col-sm-3 col-xs-6">
-                <div class="brand--img"> <img src="/front/img/brands-img/brand-08.png" alt="" class="center-block" data-rjs="2"> </div>
-            </div>
-            <div class="brand--item col-md-2 col-sm-3 col-xs-6">
-                <div class="brand--img"> <img src="/front/img/brands-img/brand-09.png" alt="" class="center-block" data-rjs="2"> </div>
-            </div>
-            <div class="brand--item col-md-2 col-sm-3 col-xs-6">
-                <div class="brand--img"> <img src="/front/img/brands-img/brand-10.png" alt="" class="center-block" data-rjs="2"> </div>
-            </div>
-            <div class="brand--item col-md-2 col-sm-3 col-xs-6">
-                <div class="brand--img"> <img src="/front/img/brands-img/brand-11.png" alt="" class="center-block" data-rjs="2"> </div>
-            </div>
-            <div class="brand--item col-md-2 col-sm-3 col-xs-6">
-                <div class="brand--img"> <img src="/front/img/brands-img/brand-12.png" alt="" class="center-block" data-rjs="2"> </div>
-            </div>
-            <div class="brand--item col-md-2 col-sm-3 col-xs-6">
-                <div class="brand--img"> <img src="/front/img/brands-img/brand-13.png" alt="" class="center-block" data-rjs="2"> </div>
-            </div>
-            <div class="brand--item col-md-2 col-sm-3 col-xs-6">
-                <div class="brand--img"> <img src="/front/img/brands-img/brand-14.png" alt="" class="center-block" data-rjs="2"> </div>
-            </div>
-            <div class="brand--item col-md-2 col-sm-3 col-xs-6">
-                <div class="brand--img"> <img src="/front/img/brands-img/brand-15.png" alt="" class="center-block" data-rjs="2"> </div>
+            <div class="owl-one owl-carousel">
+                <div class="items"><div class="brand--img"> <img src="/front/img/brands-img/brand-01.png" alt="" > </div></div>
+                <div class="items"><div class="brand--img"> <img src="/front/img/brands-img/brand-02.png" alt="" class="center-block" data-rjs="2"> </div></div>
+          
+              <div class="items">  <div class="brand--img"> <img src="/front/img/brands-img/brand-03.png" alt="" class="center-block" data-rjs="2"> </div></div>
+         
+                <div class="items"><div class="brand--img"> <img src="/front/img/brands-img/brand-04.png" alt="" class="center-block" data-rjs="2"> </div></div>
+        
+                <div class="items"><div class="brand--img"> <img src="/front/img/brands-img/brand-05.png" alt="" class="center-block" data-rjs="2"> </div></div>
+          
+                <div class="items"><div class="brand--img"> <img src="/front/img/brands-img/brand-06.png" alt="" class="center-block" data-rjs="2"> </div></div>
+        
+                <div class="items"><div class="brand--img"> <img src="/front/img/brands-img/brand-07.png" alt="" class="center-block" data-rjs="2"> </div></div>
+                <div class="items"> <div class="brand--img"> <img src="/front/img/brands-img/brand-08.png" alt="" class="center-block" data-rjs="2"> </div></div>
+
+                <div class="items"><div class="brand--img"> <img src="/front/img/brands-img/brand-10.png" alt="" class="center-block" data-rjs="2"></div> </div>
+
+                <div class="items"><div class="brand--img"> <img src="/front/img/brands-img/brand-11.png" alt="" class="center-block" data-rjs="2"> </div></div>
+
+               <div class="items"> <div class="brand--img"> <img src="/front/img/brands-img/brand-13.png" alt="" class="center-block" data-rjs="2"> </div></div>
+
+                <div class="items"><div class="brand--img"> <img src="/front/img/brands-img/brand-14.png" alt="" class="center-block" data-rjs="2"> </div></div>
+
+               <div class="items"> <div class="brand--img"> <img src="/front/img/brands-img/brand-15.jpg" alt="" class="center-block" data-rjs="2"> </div></div>
+
             </div>
         </div>
     </div>

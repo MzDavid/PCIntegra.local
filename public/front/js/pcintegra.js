@@ -11,3 +11,25 @@ $('#gallery').imagesGrid({
             align: true,
             cells: 6
         });
+
+     $(".owl-one").owlCarousel({
+        center: true,
+        items:6,
+        loop:true,
+        margin:10,
+        dots:true,
+        autoplay: true,
+        autoplaySpeed:800,
+        smartSpeed: 1200,
+        responsive:{
+            0:{
+                items:1,
+            },
+            600:{
+                items:3,
+            },
+            1000:{
+                items:6,
+        }
+     }
+ });
