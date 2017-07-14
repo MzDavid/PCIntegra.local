@@ -145,26 +145,21 @@ $di->set('router', function(){
         'controller' => 'carrer',
         'action' => 'index',
     ));
-    $router->add("/noticias", array(
+    $router->add("/servicios", array(
+        'controller' => 'service',
+        'action' => 'index',
+    ));
+    $router->add("/casos-de-exito", array(
         'controller' => 'blog',
         'action' => 'index',
     ));
-    $router->add('/noticias/([0-9-a-zA-Z\-]+)', array(
+    $router->add('/casos-de-exito/([0-9-a-zA-Z\-]+)', array(
         'module'=>'frontend',
         'permalink' => 1,
         'controller' => 'blog',
         'action' => 'blog',
     ));
-    $router->add('/mendez', array(
-        'module'=>'frontend',
-        'controller' => 'index',
-        'action' => 'mendez',
-    ));
-    $router->add('/cedros', array(
-        'module'=>'frontend',
-        'controller' => 'index',
-        'action' => 'cedros',
-    ));
+
     $router->add('/oferta-educativa/umaee/([0-9-a-zA-Z\-]+)', array(
         'module'=>'frontend',
         'category' => 1,

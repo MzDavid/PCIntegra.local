@@ -20,8 +20,7 @@ class IndexController extends ControllerBase
         $url = "";
         $image = "series.jpg";
         $description = "Inscripciones en linea de universidades en villahermosa tabasco, licenciatura en publicidad, licenciatura en mercadotecnia y negocios digitales.";
-        $class = "header-1";
-        $this->metaHome($title,$url,$image,$description,$class);
+        $this->metaHome($title,$url,$image,$description);
         $category = CdCareers::find("status='ACTIVO' and category='LICENCIATURA'");
         $slider = CdSlider::find("status='ACTIVO' order by order_slider asc");
         $teacher = CdUser::find("rol='ADMIN' and status='ACTIVE'");
@@ -57,8 +56,7 @@ class IndexController extends ControllerBase
         $url ="/cotactanos";
         $image = "series.jpg";
         $description = "Contacta a la Universidad en villahermosa UMAEE.";
-        $class = "header-4 header-2";
-        $this->metaHome($title,$url,$image,$description,$class);
+        $this->metaHome($title,$url,$image,$description);
     }
     public function mendezAction(){
         $this->header("mendez");
@@ -66,8 +64,7 @@ class IndexController extends ControllerBase
         $url ="/cotactanos";
         $image = "series.jpg";
         $description = "Contacta a la Universidad en villahermosa UMAEE.";
-        $class = "header-4 header-2";
-        $this->metaHome($title,$url,$image,$description,$class);
+        $this->metaHome($title,$url,$image,$description);
     }
     public function sendMessageContactAction()
     {
@@ -162,8 +159,7 @@ class IndexController extends ControllerBase
         $url ="/cotactanos";
         $image = "series.jpg";
         $description = "Contacta a la Universidad en villahermosa UMAEE.";
-        $class = "header-4 header-2";
-        $this->metaHome($title,$url,$image,$description,$class);
+        $this->metaHome($title,$url,$image,$description);
     }
     public function aboutAction()
     {
@@ -172,8 +168,7 @@ class IndexController extends ControllerBase
         $url ="/mision-y-vision";
         $image = "series.jpg";
         $description = "Acerca de la Universidad en villahermosa UMAEE.";
-        $class = "header-4 header-2";
-        $this->metaHome($title,$url,$image,$description,$class);
+        $this->metaHome($title,$url,$image,$description);
         $teacher = CdUser::find("rol='ADMIN' and status='ACTIVE'");
         $this->view->setVar("teacher",$teacher);
 
@@ -185,8 +180,7 @@ class IndexController extends ControllerBase
         $url ="/historia";
         $image = "series.jpg";
         $description = "Acerca de la Universidad en villahermosa UMAEE.";
-        $class = "header-4 header-2";
-        $this->metaHome($title,$url,$image,$description,$class);
+        $this->metaHome($title,$url,$image,$description);
     }
     public function privacidadAction()
     {
@@ -195,8 +189,7 @@ class IndexController extends ControllerBase
         $url ="/aviso-de-privacidad";
         $image = "series.jpg";
         $description = "Acerca de la Universidad en villahermosa UMAEE.";
-        $class = "header-4 header-2";
-        $this->metaHome($title,$url,$image,$description,$class);
+        $this->metaHome($title,$url,$image,$description);
     }
     private function video(){
         $json = dirname(dirname(dirname(dirname(__DIR__))))."/public/json/videos.json";

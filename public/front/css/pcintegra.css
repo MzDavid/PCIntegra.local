@@ -1,0 +1,46 @@
+.imgs-grid-modal .modal-inner .modal-control .arrow {
+    margin: 0 auto;
+    height: 100%;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-image: url(../img/imgs-grid-icons.png);
+}
+.imgs-grid-modal .modal-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 35px;
+    height: 35px;
+    background-image: url(../img/imgs-grid-icons.png);
+    background-repeat: no-repeat;
+    background-position: -100px;
+}
+.imgs-grid-modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0;
+    z-index: 100;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    z-index: 9999;
+}
+
+#map_wrapper {
+    height: 400px;
+}
+
+#map_canvas {
+    width: 100%;
+    height: 100%;
+}
+.contact--form{
+    height: 100% !important;
+    margin: 15px 0 15px 0;
+}

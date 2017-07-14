@@ -70,10 +70,9 @@
                                 <li> <a href="/acerca-de-pc-integra">¿Quienes somos?</a>
 
                                 </li>
-                                <li><a href="/">Servicios</a></li>
-                                <li class="dropdown megamenu"> <a href="#">Experiencia</a>
+                                <li><a href="/servicios">Servicios</a></li>
                                 </li>
-                                <li> <a href="/noticias">Casos de éxito </a>
+                                <li> <a href="/casos-de-exito">Casos de Exito </a>
                                 </li>
                                 <li><a href="/contactanos">Contactanos</a></li>
                             </ul>
@@ -152,12 +151,11 @@
             <div class="container-fluid bg--color-theme">
                 <div class="footer--menu-wrapper">
                     <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Experiencia</a></li>
-                        <li><a href="#">Comprar</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="/acerca-de-pc-integra">Nosotros</a></li>
+                        <li><a href="/servicios">Servicios</a></li>
+                        <li><a href="/casos-de-exito">Casos de éxito</a></li>
+                        <li><a href="/contactanos">Contacto</a></li>
                     </ul>
                 </div>
             </div>

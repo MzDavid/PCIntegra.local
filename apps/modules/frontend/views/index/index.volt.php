@@ -39,7 +39,7 @@
                         <div data-toggle="tab" data-target="#servicesTabItem04"> <i class="fa fa-video-camera"></i>
                             <h3 class="h3"> Sistema de Video Vigilancia </h3></div>
                     </li>
-                <p class="text-center"><a href="service-single.html" class="btn-link">Ver Más</a> </p>
+                <p class="text-center"><a href="/servicios" class="btn-link">Ver Más</a> </p>
                 </ul>
             </div>
             <div class="service--tabs col-md-6">
@@ -133,6 +133,15 @@
         </div>
     </div>
 </div>
+<div id="galeria" class="galeria pd--100-0-40">
+    <div class="section--title text-center">
+      <h2 class="h2">Certificados</h2>
+    </div>
+    <div class="container">
+       <div id="gallery">
+        </div>
+    </div>
+</div>
 <div id="counter" class="pd--100-0-40 contador">
     <div class="container">
         <div class="row">
@@ -156,37 +165,6 @@
                     <p data-counter-up="numbers">299</p>
                     <h2 class="h3">Reconocimientos</h2> <i class="fa fa-trophy"></i> </div>
             </div>
-        </div>
-    </div>
-</div>
-<div id="galeria" class="galeria pd--100-0-40">
-    <div class="section--title text-center">
-      <h2 class="h2">Certificados</h2>
-    </div>
-    <div class="container">
-       <div id="gallery">
-        </div>
-    </div>
-</div>
-<div id="testimonial" class="pd--100-0-40 bg--color-lightgray">
-    <div class="container">
-        <div class="section--title text-center">
-            <h2 class="h2">Opiniones de Clientes</h2> </div>
-        <div class="testimonial--slider owl-carousel" data-owl-items="2" data-owl-margin="30" data-owl-dots="true" data-owl-responsive='{"0":{"items": "1"}, "768":{"items": "2"}}'>
-            <?php foreach($opinion as $opi):?>
-            <div class="testimonial--item">
-                <div class="testimonial--img">
-                    <figure> <img src="<?=$opi->image;?>" alt="" class="img-circle" data-rjs="2"> </figure>
-                </div>
-                <div class="testimonial--content">
-                    <blockquote>
-                        <p><i class="fa fm fa-quote-left"></i><?=$opi->opinion;?></p>
-                    </blockquote>
-                    <h3 class="h4"><?=$opi->name;?></h3>
-                    <p class="subtitle"><?=$opi->title;?></p>
-                </div>
-            </div>
-            <?php endforeach;?>
         </div>
     </div>
 </div>
@@ -227,6 +205,18 @@
             </div>
             <div class="brand--item col-md-2 col-sm-3 col-xs-6">
                 <div class="brand--img"> <img src="/front/img/brands-img/brand-11.png" alt="" class="center-block" data-rjs="2"> </div>
+            </div>
+            <div class="brand--item col-md-2 col-sm-3 col-xs-6">
+                <div class="brand--img"> <img src="/front/img/brands-img/brand-12.png" alt="" class="center-block" data-rjs="2"> </div>
+            </div>
+            <div class="brand--item col-md-2 col-sm-3 col-xs-6">
+                <div class="brand--img"> <img src="/front/img/brands-img/brand-13.png" alt="" class="center-block" data-rjs="2"> </div>
+            </div>
+            <div class="brand--item col-md-2 col-sm-3 col-xs-6">
+                <div class="brand--img"> <img src="/front/img/brands-img/brand-14.png" alt="" class="center-block" data-rjs="2"> </div>
+            </div>
+            <div class="brand--item col-md-2 col-sm-3 col-xs-6">
+                <div class="brand--img"> <img src="/front/img/brands-img/brand-15.png" alt="" class="center-block" data-rjs="2"> </div>
             </div>
         </div>
     </div>

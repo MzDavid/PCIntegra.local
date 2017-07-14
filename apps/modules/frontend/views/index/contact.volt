@@ -1,4 +1,4 @@
-<div id="pageHeader" class="pd--80-0" data-bg-img="img/page-header-img/bg.jpg">
+<div id="pageHeader" class="encabezado pd--80-0">
     <div class="container">
         <div class="page-header--title pull-left">
             <h1 class="h1">Contacto</h1> </div>
@@ -49,17 +49,9 @@
                             </div>
                         </div>
                     </div>
-
-
-
-                    <!--p>Calle 48 num 6B entre 31A y 31B Col. Aviación. <br> Cd. Del Carmen Campeche, México</p>
-                    <p>Calle Atlixco #11 Fracc. Costa Azul II M-55 L3 C.P. 77539 <br> Cancún Quintana Roo, México</p>
-                    <p>Av. Gorriones #83 Reg. 043 Smz 001 M-1 L-5 Fracc. Villas del Sol I C.P. 77724<br> Playa del Carmen Quintana Roo, México</p-->
                 </div>
                 <div class="contact--info-item col-md-3 col-xs-6">
                     <h2 class="h3">Teléfono :</h2>
-
-
                     <div class="panel-group" id="accordion2">
                         <div class="panel panel-default">
                             <div class="panel-heading">
@@ -106,6 +98,9 @@
             </div>
         </div>
     </div>
+    <div id="map_wrapper">
+        <div id="map_canvas" class="mapping"></div>
+    </div>
     <div class="contact--form">
         <div class="contact--form-wrapper">
             <div class="container">
@@ -144,4 +139,5 @@
         </div>
     </div>
 </div>
-<div id="map" data-map-latitude="23.790546" data-map-longitude="90.375583" data-map-zoom="16" data-map-marker="[[23.790546, 90.375583]]"></div>
+<!--div id="map" data-map-latitude="23.790546" data-map-longitude="90.375583" data-map-zoom="16" data-map-marker="[[23.790546, 90.375583]]"></div-->
+
