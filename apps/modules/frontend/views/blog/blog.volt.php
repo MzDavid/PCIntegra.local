@@ -24,7 +24,7 @@
                         <ul>
                             <?php foreach($postall as $postall):?>
                             <li><a href="/noticias/<?= $postall->getPermalink() ?>">
-                                    <div class="img"><img src="/dash/img/notes/<?= $post->getImage() ?>" alt="" data-rjs="2">
+                                    <div class="img"><img src="/dash/img/notes/<?= $postall->getImage() ?>" alt="" data-rjs="2">
                                         <div class="figcaption"><i class="fa fa-link"></i></div>
                                     </div>
                                     <div class="info">

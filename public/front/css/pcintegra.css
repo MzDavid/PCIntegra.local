@@ -44,3 +44,9 @@
     height: 100% !important;
     margin: 15px 0 15px 0;
 }
+.banner--slider.owl-carousel.owl-loaded.owl-drag, .owl-item, .banner--item.bg--img.bg--overlay {
+    min-height: 710px !important;
+}
+.bg--overlay:before{
+    background-color: rgba(0,0,0,0) !important; 
+}

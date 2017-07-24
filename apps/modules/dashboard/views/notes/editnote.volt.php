@@ -46,10 +46,10 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-2 col-xs-12 control-label">Sumario</label>
+                        <label class="col-md-2 col-xs-12 control-label">Resumen</label>
                         <div class="col-md-8 col-xs-12">
                             <textarea class="form-control" name="summary" id="" cols="10" rows="5"><?= $note->getSummary() ?></textarea>
-                            <p>Introduzca un texto de introducción para la nota.</p>
+                            <p>Introduzca un texto de introducción para el caso de éxito.</p>
                         </div>
                     </div>
                     <div class="form-group">

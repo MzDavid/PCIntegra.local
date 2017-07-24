@@ -67,14 +67,13 @@
                         <div id="headerNav" class="header--nav navbar-collapse collapse">
                             <ul class="header--nav-links nav navbar-nav">
                                 <li class="active"><a href="/">Inicio</a></li>
-                                <li> <a href="/acerca-de-pc-integra">¿Quienes somos?</a>
+                                <li> <a href="/acerca-de-pc-integra">¿Quiénes somos?</a>
 
                                 </li>
                                 <li><a href="/servicios">Servicios</a></li>
+                                <li> <a href="/casos-de-exito">Casos de éxito </a>
                                 </li>
-                                <li> <a href="/casos-de-exito">Casos de Exito </a>
-                                </li>
-                                <li><a href="/contactanos">Contactanos</a></li>
+                                <li><a href="/contactanos">Contáctanos</a></li>
                             </ul>
                         </div>
                     </div>
@@ -87,7 +86,7 @@
         <div class="footer--widgets">
             <div class="container">
                 <div class="row AdjustRow">
-                    <div class="footer--widget col-md-4 col-sm-6">
+                    <div class="footer--widget col-md-6 col-sm-6">
                         <div class="footer--title">
                             <div class="logo"> <img src="/front/img/footer-logo.png" alt="" data-rjs="2"> </div>
                         </div>
@@ -112,10 +111,10 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="footer--widget col-md-4 col-sm-6">
+                    <div class="footer--widget col-md-6 col-sm-6">
                         <div class="footer--title">
                             <div class="text">
-                                <h2 class="h4">Información</h2> </div>
+                                <h2 class="h4">Servicios</h2> </div>
                         </div>
                         <div class="links--widget">
                             <ul>
@@ -125,14 +124,14 @@
                                 <li><a href="#"><i class="fa fm fa-clone"></i>Redes</a></li>
                             </ul>
                             <ul>
-                                <li><a href="#"><i class="fa fm fa-clone"></i>Terminos</a></li>
+                                <li><a href="#"><i class="fa fm fa-clone"></i>Términos</a></li>
                                 <li><a href="#"><i class="fa fm fa-clone"></i>Condiciones</a></li>
                                 <li><a href="#"><i class="fa fm fa-clone"></i>FAQ</a></li>
                                 <li><a href="#"><i class="fa fm fa-clone"></i>Seguridad</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="footer--widget col-md-4 col-sm-12">
+                    <!--div class="footer--widget col-md-4 col-sm-12">
                         <div class="footer--title">
                             <div class="text">
                                 <h2 class="h4">Nuestros metodos de Pago</h2> </div>
@@ -143,7 +142,7 @@
                                 <li><img src="/front/img/footer-img/no-hidden-charges.png" alt="" data-rjs="2"></li>
                             </ul>
                         </div>
-                    </div>
+                    </div-->
                 </div>
             </div>
         </div>
@@ -152,10 +151,10 @@
                 <div class="footer--menu-wrapper">
                     <ul>
                         <li><a href="/">Inicio</a></li>
-                        <li><a href="/acerca-de-pc-integra">Nosotros</a></li>
-                        <li><a href="/servicios">Servicios</a></li>
-                        <li><a href="/casos-de-exito">Casos de éxito</a></li>
-                        <li><a href="/contactanos">Contacto</a></li>
+                        <li><a href="#">¿Quiénes Somos?</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Comprar</a></li>
+                        <li><a href="#">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -169,6 +168,7 @@
     <div id="backToTop"> <a href="#" class="btn btn-default active"><i class="fa fa-angle-up"></i></a> </div>
 </div>
 <?php echo $this->assets->outputJs("IndexJs");?>
+
 </body>
 
 </html>

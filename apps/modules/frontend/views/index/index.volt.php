@@ -1,10 +1,16 @@
 <div id="banner">
-    <?php foreach($sliders as $sli):?>
     <div class="banner--slider owl-carousel" data-owl-dots="true">
+    <?php foreach($sliders as $sli):?>
         <div class="banner--item" data-bg-img="/api/images/slider/<?=$sli->image;?>">
             <div class="container">
                 <div class="row">
-                    <div class="banner--img col-md-6">
+                    <div class="banner--img col-md-6"> <!--img src="/front/img/home-banner-img/slider-item-02.png" alt="" data-rjs="2">
+                        <div class="banner--offer">
+                            <p>Hasta<strong>30%</strong> De descuento en productos</p>
+                        </div>
+                        <div class="banner--offer large">
+                            <p>A partir de <strong>$4.99</strong> Por Año</p>
+                        </div-->
                     </div>
                     <div class="banner--content col-md-6">
                         <h1 class="h2"><?=$sli->title;?></h1>
@@ -19,25 +25,25 @@
 <div id="servicesTab" class="pd--100-0">
     <div class="container">
         <div class="section--title text-center">
-            <h2 class="h2">Nuestros Servicios</h2> </div>
+            <h2 class="h2">Nuestros servicios</h2> </div>
         <div class="row">
             <div class="service-tab--nav col-md-6">
                 <ul class="bg--color-lightgray row">
                     <li class="col-md-6">
                         <div data-toggle="tab" data-target="#servicesTabItem01"> <i class="fa fa-server"></i>
-                            <h3 class="h3">Integración de Servidores y Redes</h3></div>
+                            <h3 class="h3">Integración de servidores y redes</h3></div>
                     </li>
                     <li class="col-md-6">
                         <div data-toggle="tab" data-target="#servicesTabItem02"> <i class="fa fa-sitemap"></i>
-                            <h3 class="h3">Cableado Estructurado</h3></div>
+                            <h3 class="h3">Cableado estructurado</h3></div>
                     </li>
                     <li class="col-md-6">
                         <div data-toggle="tab" data-target="#servicesTabItem03"> <i class="fa fa-phone"></i>
-                            <h3 class="h3">Telefónia Convecional Voz IP</h3></div>
+                            <h3 class="h3">Telefónia convecional Voz IP</h3></div>
                     </li>
                     <li class="col-md-6 active">
                         <div data-toggle="tab" data-target="#servicesTabItem04"> <i class="fa fa-video-camera"></i>
-                            <h3 class="h3"> Sistema de Video Vigilancia </h3></div>
+                            <h3 class="h3"> Sistema de video vigilancia </h3></div>
                     </li>
                 <p class="text-center"><a href="/servicios" class="btn-link">Ver Más</a> </p>
                 </ul>
@@ -92,7 +98,7 @@
                         <a href="#" class="btn-link">Conocer Más</a>
                     </div>
                     <div id="servicesTabItem04" class="tab-pane fade in active">
-                        <h3 class="title h3">Soporte Técnico y Arrendamiento</h3>
+                        <h3 class="title h3">Soporte técnico y arrendamiento</h3>
                         <p>Prestamos servicios de:</p>
                         <div class="row">
                             <div class="col-md-6">
@@ -103,7 +109,7 @@
                             </div>
                             <div class="col-md-6"> <img src="/front/img/services-tab-img/seo.jpg" alt=""> </div>
                         </div>
-                        <a href="#" class="btn-link">Conocer Más</a>
+                        <a href="#" class="btn-link">Conocer más</a>
                     </div>
                 </div>
             </div>
@@ -115,12 +121,12 @@
         <div class="row">
             <div class="bg--national col-md-6"></div>
             <div class="bg--national-cover col-md-6">
-                    <h2 class="h2dev">¿Porqué elegirnos?</h2>
+                    <h2 class="h2dev">¿Por qué elegirnos?</h2>
                     <div class="doblelista">
                     <ul><li><i class="fa fa-check-square-o"></i><span>Servidores 20 veces más rápidos</span></li>
-                    <li><i class="fa fa-check-square-o"></i><span>Expertos en Soporte Técnico</span></li>
-                    <li><i class="fa fa-check-square-o"></i><span>99.9% Garantía de Disponibilidad</span></li>  
-                    <li><i class="fa fa-check-square-o"></i><span>24/7 Prioridad de Soporte</span></li> 
+                    <li><i class="fa fa-check-square-o"></i><span>Expertos en soporte técnico</span></li>
+                    <li><i class="fa fa-check-square-o"></i><span>99.9% Garantía de disponibilidad</span></li>
+                    <li><i class="fa fa-check-square-o"></i><span>24/7 Prioridad de soporte</span></li>
                     </ul>
                     <ul><li><i class="fa fa-check-square-o"></i><span>Confiabilidad</span></li> 
                     <li><i class="fa fa-check-square-o"></i><span>Trayectoria y experiencia</span></li>
@@ -142,23 +148,23 @@
         </div>
     </div>
 </div>
-<div id="counter" class="pd--100-0-40 contador">
+<!--div id="counter" class="pd--100-0-40 contador">
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-xs-6">
                 <div class="counter--item">
                     <p data-counter-up="numbers">1095</p>
-                    <h2 class="h3">Dominios Registrados</h2> <i class="fa fa-globe"></i> </div>
+                    <h2 class="h3">Dominios registrados</h2> <i class="fa fa-globe"></i> </div>
             </div>
             <div class="col-md-3 col-xs-6">
                 <div class="counter--item">
                     <p data-counter-up="numbers">1275</p>
-                    <h2 class="h3">Clientes Felices</h2> <i class="fa fa-handshake-o"></i> </div>
+                    <h2 class="h3">Clientes felices</h2> <i class="fa fa-handshake-o"></i> </div>
             </div>
             <div class="col-md-3 col-xs-6">
                 <div class="counter--item">
                     <p data-counter-up="numbers">168</p>
-                    <h2 class="h3">Proyectos en Proceso</h2> <i class="fa fa-file"></i> </div>
+                    <h2 class="h3">Proyectos en proceso</h2> <i class="fa fa-file"></i> </div>
             </div>
             <div class="col-md-3 col-xs-6">
                 <div class="counter--item">
@@ -167,7 +173,7 @@
             </div>
         </div>
     </div>
-</div>
+</div-->
 <div id="brands" class="pd--100-0-70">
     <div class="container">
         <div class="section--title text-center">

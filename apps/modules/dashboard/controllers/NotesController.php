@@ -9,7 +9,7 @@ class NotesController extends ControllerBase{
         $auth = $this->auth();
         if($auth){
             $uid = $auth['uid'];
-            $allNotes = new Allnotes();
+            $allNotes = new CdPost();
             if($auth['rol']=="ADMIN"){
                 $this->view->setVar("allnotes",$allNotes->find("status='PUBLIC'"));
             }else{$this->view->setVar("allnotes",$allNotes->find("status='PUBLIC' and uid=$uid"));}

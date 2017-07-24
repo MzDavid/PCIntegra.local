@@ -8,7 +8,7 @@ class ServiceController extends ControllerBase
 {
     public function indexAction()
     {
-        $find = CdCareers::find("uid=1");
+        $find = CdCareers::find("status='ACTIVO'");
         $this->view->setVar("oferta",$find);
         $title = $find->name;
         $url =$find->permalink;

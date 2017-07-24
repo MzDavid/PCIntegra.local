@@ -68,7 +68,9 @@ class CareersController extends ControllerBase
         if($request->isPost() && $request->isAjax() && $auth ){
             $note = new CdCareers();
             $find = $note->findFirst($request->getPost("crid"));
-            $find->setInformation($request->getPost("information"))
+            $find->setName(str_replace('\'', '"',$request->getPost("title")))
+                ->setPermalink($request->getPost("permalink"))
+                ->setInformation($request->getPost("information"))
                 ->setQuestion($request->getPost("question"))
                 ->setVideo($request->getPost('video'));
             if($find->update()){

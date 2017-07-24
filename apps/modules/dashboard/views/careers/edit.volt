@@ -43,21 +43,6 @@
                             </div>
                         </div>
                     </div>
-                    <!--div class="form-group">
-                        <label class="col-md-2 col-xs-12 control-label">Plan de Estudio (PDF)</label>
-                        <div class="col-md-8 col-xs-12">
-                            <div id="sendMailPersonal" class="dropzone-personalized dz-default dz-message">
-                                <div class="dz-default dz-message">
-                                    <div class="alert alert-info" style="cursor: pointer;width: 50%;float: left;">
-                                        <i class="fa fa-files-o" style=""></i>&nbsp;Clic para subir archivo
-                                        <input type="hidden" value="<?=$note->getPlan()?$note->getPlan():'icon.png'?>" id="files" name="files">
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                            <span>Máximo 1 archivo y no mayor a 15 MB</span>
-                        </div>
-                    </div-->
                     <div class="form-group">
                         <label class="col-md-2 col-xs-12 control-label">Video</label>
                         <div class="col-md-8 col-xs-12">

@@ -2305,7 +2305,7 @@ h2.h2dev{
         }
 
 .service-tab--nav ul li.active>div{
-    color: #d41628;
+    color: #ffffff;
     -webkit-transform: translate(0, 5px);
     box-shadow: 
         0px 3px rgba(128,128,128,1), 

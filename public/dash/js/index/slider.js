@@ -154,7 +154,7 @@ function deleteRow(selector,url){
     });
 }
 function uploadFile(selector,type,sid,form){
-    var minImageWidth = 1662, minImageHeight = 1090;
+    var minImageWidth = 1919, minImageHeight = 1054;
     Dropzone.autoDiscover = false;
     var myDropzone;
     myDropzone = new Dropzone(selector, {
