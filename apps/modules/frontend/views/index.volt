@@ -20,6 +20,17 @@
     <div id="preloader" class="bg--color-theme"></div>
     <div class="wrapper">
         <header id="header">
+            <div class="subheader container">
+                <div class="header--topbar-social pull-left hidden-xs">
+                    <ul class="nav">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    </ul>
+                    <ul class="nav">
+                        <li class="hidden-xs"><a href="tel:+9383814581"><i class="fa fm fa-headphones"></i>MID: (999) 9415077 | CDMX: (55) 5689 3329 | MTY: (81) 8335 2297 | PCM: (984) 873 0271</a></li>
+                        <li class="subheader--mail"><a href="mailto:ventas@nationalsoft.com.mx"><i class="fa fa-envelope"></i> ventas@nationalsoft.com.mx</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="header--topbar">
                 <div class="container">
                     <div class="pull-left clearfix">
@@ -27,11 +38,6 @@
                             <div class="vc--child">
                                 <div class="header--topbar-social pull-left hidden-xs">
                                     <ul class="nav">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -45,7 +51,6 @@
                             <div class="vc--child">
                                 <div class="header--topbar-info pull-left">
                                     <ul class="nav">
-                                        <li class="hidden-xs"><a href="tel:+9383814581"><i class="fa fm fa-headphones"></i>+52 (938) 38 14581</a></li>
                                         <li><a href="/login" class="btn btn-sm btn-default active"><i class="fa fm fa-user-o"></i>Iniciar Sesión</a></li>
                                     </ul>
                                 </div>

@@ -734,20 +734,24 @@ body.isTawkMobile #backToTop {
     outline: 0
 }
 
-.division{
+.division {
     padding: 0;
     margin: 0;
     width: 100%;
 }
 
-.bg--national{
+.division .celdas {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.bg--national {
     height: 500px;
     background: url(../img/we-are-img/Planification-Fiscale.jpg) no-repeat center top;
     background-size: cover;
-
 }
 
-.bg--national-cover{
+.bg--national-cover {
     height: 500px;
     background: url(../img/we-are-img/network.jpg) no-repeat center;
     background-attachment: fixed;
@@ -755,54 +759,61 @@ body.isTawkMobile #backToTop {
     padding: 3em;
     text-align: center;
     display: flex;
-        flex-direction: column;
+    flex-direction: column;
     justify-content: center;
 }
+
 .bg--national-cover p,
-h2.h2dev{
+h2.h2dev {
     color: #fff;
     line-height: 30px;
     text-align: center;
 }
 
-.doblelista{
+.doblelista {
     text-align: initial;
     display: flex;
     justify-content: space-around;
     padding-bottom: 30px;
 }
-.doblelista ul{
+
+.doblelista ul {
     margin-bottom: 0;
     padding: 0;
 }
 
-.bg--national-cover p.enlace-cliente{
+.bg--national-cover p.enlace-cliente {
     text-align: center;
     color: #fff;
     font-size: 18px;
 }
-.bg--national-cover p.enlace-cliente a{
+
+.bg--national-cover p.enlace-cliente a {
     text-decoration: underline;
 }
-.bg--national-cover p{
+
+.bg--national-cover p {
     font-weight: 300;
 }
-.bg--national-cover li{
+
+.bg--national-cover li {
     list-style: none;
     color: #fff;
     line-height: 40px;
     font-size: 18px;
 }
 
-.bg--national-cover li i{
+.bg--national-cover li i {
     margin-right: 10px;
     display: block;
     position: relative;
     top: 30px;
 }
-.bg--national-cover li span{
+
+.bg--national-cover li span {
     margin-left: 25px;
 }
+
 .links--widget ul {
     float: left;
     display: block;
@@ -1272,12 +1283,25 @@ h2.h2dev{
     position: relative
 }
 
-.encabezado{
+.encabezado {
     background-color: #136497;
 }
 
+.subheader {
+    background: #eee;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.subheader .header--topbar-social {
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+}
+
 .header--topbar {
-    text-align: center
+    text-align: center;
 }
 
 .header--topbar>.container,
@@ -1288,6 +1312,19 @@ h2.h2dev{
 
 .header--topbar .nav>li>a {
     padding: 3px 7.5px 4px
+}
+
+.nav>li.subheader--mail>i {
+    position: relative;
+    padding: 10px 15px;
+}
+
+.nav>li.subheader--mail {
+    display: flex;
+}
+
+.header--topbar-social ul.nav {
+    display: flex;
 }
 
 .header--topbar-social {
@@ -1476,7 +1513,7 @@ h2.h2dev{
     color: #82b440
 }
 
-.page-header--breadcrumb ul li.active{
+.page-header--breadcrumb ul li.active {
     color: #fff;
 }
 
@@ -1893,15 +1930,15 @@ h2.h2dev{
     margin-top: 27px
 }
 
-.valores{
+.valores {
     padding-top: 2em;
 }
 
-.valores p strong{
+.valores p strong {
     color: #d41628;
 }
 
-.valores .col-md-6 img{
+.valores .col-md-6 img {
     width: 500px;
     height: 300px;
     box-shadow: 4px 4px 10px #222;
@@ -2191,7 +2228,7 @@ h2.h2dev{
     border-color: #82b440
 }
 
-.galeria{
+.galeria {
     padding: 100px 0;
 }
 
@@ -2221,72 +2258,26 @@ h2.h2dev{
 .service-tab--nav ul li>div {
     border: 1px solid #999;
     border-radius: 10px;
-    box-shadow: 
-        0px 3px rgba(128,128,128,1), 
-        0px 4px rgba(118,118,118,1),
-        0px 5px rgba(108,108,108,1),
-        0px 6px rgba(98,98,98,1),
-        0px 7px rgba(88,88,88,1),
-        0px 8px rgba(78,78,78,1),
-        0px 14px 6px -1px rgba(128,128,128,1);
+    box-shadow: 0px 3px rgba(128, 128, 128, 1), 0px 4px rgba(118, 118, 118, 1), 0px 5px rgba(108, 108, 108, 1), 0px 6px rgba(98, 98, 98, 1), 0px 7px rgba(88, 88, 88, 1), 0px 8px rgba(78, 78, 78, 1), 0px 14px 6px -1px rgba(128, 128, 128, 1);
     -webkit-transition: -webkit-box-shadow .1s ease-in-out;
     -webkit-transition: background-color .25s ease-in-out, border-color .25s;
     transition: background-color .25s ease-in-out, border-color .25s
 }
 
-.service-tab--nav ul li>div .item{
+.service-tab--nav ul li>div .item {
     background-color: #E8E8E8;
-    background-image: 
-           /* gloss gradient */
-           -webkit-gradient(
-               linear, 
-               left bottom, 
-               left top, 
-               color-stop(50%,rgba(255,255,255,0)), 
-               color-stop(50%,rgba(255,255,255,0.3)), 
-               color-stop(100%,rgba(255,255,255,0.2))),
-           
-           /* dark outside gradient */
-           -webkit-gradient(
-               linear, 
-               left top, 
-               right top, 
-               color-stop(0%,rgba(210,210,210,0.3)), 
-               color-stop(20%,rgba(210,210,210,0)), 
-               color-stop(80%,rgba(210,210,210,0)), 
-               color-stop(100%,rgba(210,210,210,0.3))),
-           
-           /* light inner gradient */
-           -webkit-gradient(
-               linear, 
-               left top, 
-               right top, 
-               color-stop(0%,rgba(255,255,255,0)), 
-               color-stop(20%,rgba(255,255,255,0.5)), 
-               color-stop(80%,rgba(255,255,255,0.5)), 
-               color-stop(100%,rgba(255,255,255,0))),        
-           
-           /* diagonal line pattern */
-           -webkit-gradient(
-               linear, 
-               0% 100%, 
-               100% 0%, 
-               color-stop(0%,rgba(255,255,255,0)), 
-               color-stop(40%,rgba(255,255,255,0)), 
-               color-stop(40%,#D2D2D1), 
-               color-stop(60%,#D2D2D1), 
-               color-stop(60%,rgba(255,255,255,0)), 
-               color-stop(100%,rgba(255,255,255,0)));
-       
-       -webkit-box-shadow:
-                  0px -1px #fff, /* top highlight */
-                  0px 1px 1px #FFFFFF; /* bottom edge */
-          
-          -webkit-background-size: 100%, 100%, 100%, 4px 4px;
-          
-          -webkit-border-radius: 10px;
-          -webkit-transition: -webkit-transform .1s ease-in-out;          
-          padding: 10px;
+    background-image: /* gloss gradient */
+    -webkit-gradient( linear, left bottom, left top, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(255, 255, 255, 0.2))), /* dark outside gradient */
+    -webkit-gradient( linear, left top, right top, color-stop(0%, rgba(210, 210, 210, 0.3)), color-stop(20%, rgba(210, 210, 210, 0)), color-stop(80%, rgba(210, 210, 210, 0)), color-stop(100%, rgba(210, 210, 210, 0.3))), /* light inner gradient */
+    -webkit-gradient( linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(20%, rgba(255, 255, 255, 0.5)), color-stop(80%, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(255, 255, 255, 0))), /* diagonal line pattern */
+    -webkit-gradient( linear, 0% 100%, 100% 0%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(40%, rgba(255, 255, 255, 0)), color-stop(40%, #D2D2D1), color-stop(60%, #D2D2D1), color-stop(60%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0)));
+    -webkit-box-shadow: 0px -1px #fff, /* top highlight */
+    0px 1px 1px #FFFFFF;
+    /* bottom edge */
+    -webkit-background-size: 100%, 100%, 100%, 4px 4px;
+    -webkit-border-radius: 10px;
+    -webkit-transition: -webkit-transform .1s ease-in-out;
+    padding: 10px;
 }
 
 .service-tab--nav ul li>div .item:hover {
@@ -2295,29 +2286,13 @@ h2.h2dev{
 }
 
 .service-tab--nav ul li>div .item:active {
-            -webkit-box-shadow: 
-                0px 3px rgba(128,128,128,1),
-                0px 4px rgba(118,118,118,1),
-                0px 5px rgba(108,108,108,1),
-                0px 6px rgba(98,98,98,1),
-                0px 7px rgba(88,88,88,1),
-                0px 8px rgba(78,78,78,1),
-                0px 10px 2px 0px rgba(128,128,128,.6); 
-        }
+    -webkit-box-shadow: 0px 3px rgba(128, 128, 128, 1), 0px 4px rgba(118, 118, 118, 1), 0px 5px rgba(108, 108, 108, 1), 0px 6px rgba(98, 98, 98, 1), 0px 7px rgba(88, 88, 88, 1), 0px 8px rgba(78, 78, 78, 1), 0px 10px 2px 0px rgba(128, 128, 128, .6);
+}
 
-.service-tab--nav ul li.active>div{
+.service-tab--nav ul li.active>div {
     color: #d41628;
     -webkit-transform: translate(0, 5px);
-    box-shadow: 
-        0px 3px rgba(128,128,128,1), 
-        0px 4px rgba(118,118,118,1),
-        0px 5px rgba(108,108,108,1),
-        0px 6px rgba(98,98,98,1),
-        0px 7px rgba(88,88,88,1),
-        0px 8px rgba(78,78,78,1),
-        0px 14px 6px -1px rgba(128,128,128,1),
-        0px -3px rgba(128,128,128,1), 
-        0px -4px 6px -1px rgba(128,128,128,1);
+    box-shadow: 0px 3px rgba(128, 128, 128, 1), 0px 4px rgba(118, 118, 118, 1), 0px 5px rgba(108, 108, 108, 1), 0px 6px rgba(98, 98, 98, 1), 0px 7px rgba(88, 88, 88, 1), 0px 8px rgba(78, 78, 78, 1), 0px 14px 6px -1px rgba(128, 128, 128, 1), 0px -3px rgba(128, 128, 128, 1), 0px -4px 6px -1px rgba(128, 128, 128, 1);
 }
 
 .service-tab--nav ul li .fa,
@@ -3845,23 +3820,24 @@ h2.h2dev{
     overflow: hidden;
 }
 
-.noticias--img img{
+.noticias--img img {
     transition: .5s;
 }
 
-.post--img .contenedor{
+.post--img .contenedor {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: transparent;;
+    background: transparent;
+    ;
     transition: .5s;
     display: flex;
     justify-content: center;
 }
 
-.post--img .contenedor:before{
+.post--img .contenedor:before {
     content: '';
     position: absolute;
     top: 0;
@@ -3873,7 +3849,7 @@ h2.h2dev{
     transition: .5s;
 }
 
-.contenedor .content{
+.contenedor .content {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -3881,7 +3857,7 @@ h2.h2dev{
     text-align: center;
 }
 
-.contenedor .content h2{
+.contenedor .content h2 {
     padding: 0;
     color: #fff;
     margin-bottom: 20px;
@@ -3890,7 +3866,7 @@ h2.h2dev{
     transition: .5s;
 }
 
-.contenedor .content .post--summery{
+.contenedor .content .post--summery {
     padding: 0;
     color: #fff;
     font-size: 1em;
@@ -3899,26 +3875,26 @@ h2.h2dev{
     opacity: 0;
 }
 
-.post--img:hover .contenedor .content h2{
+.post--img:hover .contenedor .content h2 {
     transform: translateY(0) scale(1);
 }
 
-.post--img:hover .contenedor .content .post--summery{
+.post--img:hover .contenedor .content .post--summery {
     transform: scale(1);
     opacity: 1;
 }
 
-.noticias--img:hover img{
+.noticias--img:hover img {
     transform: scale(2);
 }
 
-.post--img:hover .contenedor:before{
+.post--img:hover .contenedor:before {
     opacity: 1;
     background: rgba(212, 22, 40, 0.8);
     transform: translateX(0) scale(1) skew(-45deg);
 }
 
-a.url--noticia:hover{
+a.url--noticia:hover {
     color: #fdf90a;
 }
 
@@ -4000,7 +3976,7 @@ a.url--noticia:hover{
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"
 }
 
-.contador{
+.contador {
     background-color: #136497;
 }
 
@@ -4023,14 +3999,12 @@ a.url--noticia:hover{
     font-size: 18px;
     line-height: 30px;
     text-shadow: 2px 2px #292020;
-
 }
 
 .counter--item .fa {
     font-size: 30px;
     line-height: 42px;
     text-shadow: 2px 2px #292020;
-
 }
 
 #counter.counter-box.bg--overlay:before {
@@ -4698,11 +4672,13 @@ a.url--noticia:hover{
     color: #999
 }
 
-.footer--widget ul.directorio{ padding: 0; }
+.footer--widget ul.directorio {
+    padding: 0;
+}
 
-.footer--widget ul li{ 
+.footer--widget ul li {
     position: relative;
-    list-style: none; 
+    list-style: none;
 }
 
 .footer--widget .about--widget a {
@@ -4726,7 +4702,7 @@ a.url--noticia:hover{
     margin-bottom: 10px;
 }
 
-.footer--widget .about--widget a.mail{
+.footer--widget .about--widget a.mail {
     color: #d41628;
 }
 
