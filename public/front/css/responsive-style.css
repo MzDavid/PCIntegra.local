@@ -12,11 +12,9 @@ Author : themelooks.com
     .header--navbar-wrapper:before {
         width: 940px
     }
-
- .bg--national-cover{
+    .bg--national-cover {
         padding: 0 3em;
     }
-
     #servicesTab>.container>.row>.col-md-6,
     .header--nav-links>.dropdown.megamenu>.dropdown-menu>.col-md-10 {
         width: 100%
@@ -43,14 +41,17 @@ Author : themelooks.com
     .portfolio--filter-nav.triangle--on ul li a:before {
         display: none
     }
-
     #datacenter .datacenter-tabs--widget {
         margin-top: 0
     }
-    .header--navbar {
-        padding-bottom: 0
+    .subheader--mail {
+        font-size: 10px;
     }
-    .header--topbar-logo{
+    .header--navbar {
+        padding-bottom: 0;
+        display: block;
+    }
+    .header--topbar-logo {
         width: 270px;
     }
     .header--navbar-wrapper:before {
@@ -106,7 +107,7 @@ Author : themelooks.com
         float: right;
         margin-right: 0
     }
-    .header--topbar-logo{
+    .header--topbar-logo {
         width: 270px;
     }
     .banner--item {
@@ -234,6 +235,9 @@ Author : themelooks.com
     .header--nav-links>.dropdown>.dropdown-menu {
         background-color: #fff;
         border: 2px solid #ccc
+    }
+    .header--topbar-logo {
+        margin-left: 0;
     }
     .banner--offer:not(.large) {
         display: none
@@ -400,9 +404,9 @@ Author : themelooks.com
     .header--topbar {
         text-align: left
     }
-
-    .header--topbar-logo{width: 140px;}
-
+    .header--topbar-logo {
+        width: 140px;
+    }
     .domain-search--form .input-group-addon:first-child {
         display: none
     }
@@ -426,12 +430,11 @@ Author : themelooks.com
         width: 100%;
         margin: 55px 0 10px
     }
-    .bg--national-cover li{
+    .bg--national-cover li {
         line-height: 25px;
         font-size: 16px;
     }
-
-    .bg--national-cover li i{
+    .bg--national-cover li i {
         top: 20px;
     }
     #counter .col-xs-6,

@@ -1336,6 +1336,7 @@ h2.h2dev {
     display: inline-block;
     padding: 15px 0;
     width: 270px;
+    margin-left: 15%;
 }
 
 .header--topbar-info .nav>li>a.btn {
@@ -1378,14 +1379,17 @@ h2.h2dev {
     margin-bottom: 0;
     border: 0;
     border-radius: 2px;
-    z-index: 999
+    z-index: 999;
+    display: flex;
+    justify-content: center;
 }
 
+
+}
 .header--nav {
     padding-left: 25px;
     padding-right: 25px
 }
-
 .header--nav-links>li>a {
     margin: 4px 0;
     padding: 6px 15px;
@@ -1393,12 +1397,10 @@ h2.h2dev {
     font-size: 16px;
     line-height: 20px
 }
-
 .header--nav-links>li>a:focus,
 .header--nav-links>li>a:hover {
     background-color: #fff
 }
-
 .header--nav-links>li.active>a,
 .header--nav-links>li.open>a,
 .header--nav-links>li.open>a:focus,
@@ -1406,7 +1408,6 @@ h2.h2dev {
     color: #82b440;
     background-color: #fff
 }
-
 .header--nav-links.cart>li>a {
     margin: 0;
     padding: 10px 14px 10px 31px;
@@ -1415,11 +1416,9 @@ h2.h2dev {
     border-left: 1px solid rgba(255, 255, 255, .35);
     border-radius: 0
 }
-
 .header--nav-links.cart>li>a .fa {
     margin-right: 5px
 }
-
 .header--nav-links>li.dropdown>a:after,
 .header--nav-links>li.dropdown>a:before {
     content: " ";
@@ -1430,7 +1429,6 @@ h2.h2dev {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
 }
-
 .header--nav-links>li.dropdown>a:before {
     top: 41px;
     width: 15px;
@@ -1444,7 +1442,6 @@ h2.h2dev {
     border-bottom: 2px solid #ccc;
     z-index: 2
 }
-
 .header--nav-links>li.dropdown>a:after {
     top: 47px;
     width: 0;
@@ -1454,40 +1451,33 @@ h2.h2dev {
     border-color: #82b440 transparent transparent;
     z-index: 1
 }
-
 .header--nav-links>.dropdown>.dropdown-menu {
     margin-top: 11px;
     padding-top: 18px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
     z-index: 0
 }
-
 .header--nav-links>.dropdown>.dropdown-menu>li.active>a,
 .header--nav-links>.dropdown>.dropdown-menu>li.active>a:focus,
 .header--nav-links>.dropdown>.dropdown-menu>li.active>a:hover {
     color: #82b440
 }
-
 .header--nav-links>.dropdown.megamenu {
     position: static
 }
-
 .header--nav-links>.dropdown.megamenu>.dropdown-menu {
     right: 0;
     margin-top: -5px;
     padding: 12px 15px 15px;
     color: #555
 }
-
 .header--nav-links>.dropdown.megamenu>.dropdown-menu.bg--overlay {
     position: absolute
 }
-
 .header--nav-links>.dropdown.megamenu .nav {
     float: left;
     margin-top: 11px
 }
-
 .header--nav-links>.dropdown.megamenu .nav>.dropdown-header {
     margin: 0 15px 8px;
     padding: 0 0 8px;
@@ -1496,38 +1486,31 @@ h2.h2dev {
     font-size: 14px;
     line-height: 24px
 }
-
 .header--nav-links>.dropdown.megamenu .nav>li+.dropdown-header,
 .team--member-content .h4+p+p {
     margin-top: 17px
 }
-
 .header--nav-links>.dropdown.megamenu .nav>li>a {
     padding-top: 3px;
     padding-bottom: 3px
 }
-
 .header--nav-links>.dropdown.megamenu .nav>li.active>a,
 .page-header--breadcrumb ul li.active,
 .ssl-certificate-single .page--content ul li span {
     color: #82b440
 }
-
 .page-header--breadcrumb ul li.active {
     color: #fff;
 }
-
 #pageHeader,
 .checkout--info>p a {
     color: #fff;
     text-shadow: 2px 2px #222;
 }
-
 .page-header--title .h1 {
     margin: 0;
     font-weight: 600
 }
-
 .page-header--breadcrumb ul {
     margin: 5px 0 0;
     padding: 0;
@@ -1535,11 +1518,9 @@ h2.h2dev {
     font-size: 18px;
     line-height: 30px
 }
-
 .page--content {
     margin-bottom: 60px
 }
-
 .page--content .h1,
 .page--content .h2,
 .page--content .h3,
@@ -1556,7 +1537,6 @@ h2.h2dev {
     margin-top: 30px;
     margin-bottom: 20px
 }
-
 .page--content .h1:first-child,
 .page--content .h2:first-child,
 .page--content .h3:first-child,
@@ -1571,26 +1551,21 @@ h2.h2dev {
 .page--content h6:first-child {
     margin-top: 0
 }
-
 .page--content p {
     margin-bottom: 16px
 }
-
 .page--content img.alignright {
     float: right;
     margin-left: 30px
 }
-
 .page--content img.aligncenter {
     display: block;
     margin-left: auto;
     margin-right: auto
 }
-
 .page--content span.img {
     margin-bottom: 10px
 }
-
 .page--content .video-popup-btn span .fa,
 .page--content span.img,
 .page--content span.img.alignright {
@@ -1598,7 +1573,6 @@ h2.h2dev {
     position: relative;
     z-index: 0
 }
-
 .page--content span.img:before {
     content: " ";
     position: absolute;
@@ -1609,24 +1583,20 @@ h2.h2dev {
     border: 1px dashed #82b440;
     z-index: -1
 }
-
 .page--content span.img.alignright:before {
     left: auto;
     right: 10px
 }
-
 .page--content span.img.alignleft {
     float: left;
     margin-right: 30px;
     margin-bottom: 20px
 }
-
 .page--content span.img.alignright {
     float: right;
     margin-left: 30px;
     margin-bottom: 20px
 }
-
 .page--content blockquote {
     padding: 0 40px;
     color: #999;
@@ -1634,22 +1604,18 @@ h2.h2dev {
     font-size: 14px;
     line-height: 26px
 }
-
 .page--content blockquote p:before {
     content: "\f10d";
     margin-right: 8px;
     font-family: "FontAwesome";
     font-size: 30px
 }
-
 .page--content .video-popup-btn {
     position: relative
 }
-
 .page--content .video-popup-btn.pull-left {
     margin-right: 30px
 }
-
 .page--content .video-popup-btn span {
     position: absolute;
     top: 50%;
@@ -1660,7 +1626,6 @@ h2.h2dev {
     color: #fff;
     text-align: center
 }
-
 .page--content .video-popup-btn span .fa {
     width: 70px;
     height: 70px;
@@ -1671,7 +1636,6 @@ h2.h2dev {
     border-radius: 50%;
     font-size: 18px
 }
-
 .page--content .video-popup-btn span .fa:after {
     content: " ";
     position: absolute;
@@ -1683,7 +1647,6 @@ h2.h2dev {
     border-radius: 50%;
     z-index: -1
 }
-
 .ssl-certificate-single .page--content ul {
     padding-left: 0;
     list-style: none;
@@ -1691,84 +1654,66 @@ h2.h2dev {
     font-size: 18px;
     line-height: 30px
 }
-
 .ssl-certificate-single .page--content ul li {
     margin-bottom: 9px
 }
-
 .ssl-certificate-single .page--content ul li:before {
     content: "\f046";
     margin-right: 10px;
     font-family: "FontAwesome"
 }
-
 .affiliate-page .page--content img {
     box-shadow: 0 1px 10px rgba(0, 0, 0, .1)
 }
-
 .coming-soon-page {
     min-height: 100%;
     background-position: center bottom
 }
-
 .coming-soon-page.bg--overlay:before {
     background-color: #fff
 }
-
 .coming-soon-page .page--content {
     margin-bottom: 0;
     color: #555
 }
-
 .coming-soon-page .page--content .h1 {
     margin: 24px 0 47px;
     font-weight: 600
 }
-
 .coming-soon-page .page--content p {
     font-size: 16px;
     line-height: 28px
 }
-
 .coming-soon-page .page--content p a {
     font-weight: 600
 }
-
 .coming-soon-page .countdown--timer {
     margin-bottom: 43px
 }
-
 .coming-soon-page .search--widget {
     margin-top: 55px
 }
-
 .coming-soon-page .search--widget::-webkit-input-placeholder {
     color: #222
 }
-
 .coming-soon-page .search--widget::-moz-placeholder {
     color: #222
 }
-
 .coming-soon-page .search--widget:-ms-input-placeholder {
     color: #222
 }
-
 .coming-soon-page .search--widget:-moz-placeholder {
     color: #222
 }
-
 .coming-soon-page .search--widget .form-control {
     padding-right: 25px;
     background-color: transparent;
     text-overflow: ellipsis
 }
-
 .coming-soon-page .search--widget .input-group-addon {
     padding-left: 0;
     padding-right: 0
 }
-
 .coming-soon-page .search--widget .input-group-addon .btn {
     margin: -1px -2px;
     color: #fff;
@@ -1776,22 +1721,18 @@ h2.h2dev {
     border: 1px solid #82b440;
     border-radius: 0 20px 20px 0
 }
-
 .coming-soon-page .social--widget ul {
     display: inline-block;
     margin-top: 54px;
     margin-bottom: 19px
 }
-
 .page--sidebar {
     margin-bottom: 60px
 }
-
 .page--content-title {
     padding-bottom: 15px;
     border-bottom: 1px solid #eee
 }
-
 .banner--slider .owl-dots {
     position: absolute;
     left: 0;
@@ -1801,7 +1742,6 @@ h2.h2dev {
     line-height: 0;
     text-align: center
 }
-
 .banner--slider .owl-dots .owl-dot {
     display: inline-block;
     width: 20px;
@@ -1813,12 +1753,10 @@ h2.h2dev {
     -webkit-transition: padding .25s, border-color .5s;
     transition: padding .25s, border-color .5s
 }
-
 .banner--slider .owl-dots .owl-dot.active {
     padding: 5px;
     border-color: #fff
 }
-
 .banner--slider .owl-dots .owl-dot span,
 .team--members .owl-dots .owl-dot span,
 .testimonial--slider .owl-dots .owl-dot span {
@@ -1828,18 +1766,15 @@ h2.h2dev {
     background-color: #a0a0a0;
     border-radius: 50%
 }
-
 .banner--item {
     padding: 100px 0
 }
-
 .banner--offer,
 .banner--offer:before {
     position: absolute;
     background-color: #fff;
     border-radius: 50%
 }
-
 .banner--offer {
     display: inline-block;
     width: 144px;
@@ -1850,7 +1785,6 @@ h2.h2dev {
     top: 0;
     z-index: 0
 }
-
 .banner--offer:before {
     content: " ";
     top: -10px;
@@ -1861,7 +1795,6 @@ h2.h2dev {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
     z-index: -1
 }
-
 .banner--offer strong {
     display: block;
     color: #82b440;
@@ -1870,7 +1803,6 @@ h2.h2dev {
     line-height: 42px;
     font-weight: 700
 }
-
 .banner--offer.large {
     top: 30%;
     left: 35%;
@@ -1878,80 +1810,65 @@ h2.h2dev {
     font-size: 18px;
     line-height: 30px
 }
-
 .banner--offer.large strong {
     font-size: 46px;
     line-height: 60px
 }
-
 .banner--content {
     font-size: 16px;
     line-height: 28px
 }
-
 .banner--content .h2 {
     margin: 0 0 38px;
     font-size: 54px;
     line-height: 68px;
     font-weight: 700
 }
-
 .banner--content .h2 strong,
 .banner--content .h3 strong,
 .domain-search--title .h3 span {
     color: #82b440
 }
-
 .bg--overlay .banner--content .h2 strong,
 .bg--overlay .banner--content .h3 strong,
 .bg--overlay .domain-search--title .h2 {
     color: #fff
 }
-
 .banner--content .h3 {
     margin: 0 0 38px;
     font-size: 48px;
     line-height: 60px;
     font-weight: 300
 }
-
 .banner--content .h3 strong {
     display: block
 }
-
 .banner--content .h4 {
     margin-top: 20px;
     margin-bottom: 34px;
     font-size: 24px;
     line-height: 26px
 }
-
 .banner--content .btn {
     margin-top: 27px
 }
-
 .valores {
     padding-top: 2em;
 }
-
 .valores p strong {
     color: #d41628;
 }
-
 .valores .col-md-6 img {
     width: 500px;
     height: 300px;
     box-shadow: 4px 4px 10px #222;
 }
-
 #steps {
     overflow: hidden
 }
-
 .step--items {
     position: relative
 }
-
 .step--line {
     position: absolute;
     top: 106px;
@@ -1960,7 +1877,6 @@ h2.h2dev {
     height: 2px;
     margin: 0 15px
 }
-
 .step--line:after,
 .step--line:before {
     content: " ";
@@ -1971,22 +1887,18 @@ h2.h2dev {
     background-image: -webkit-linear-gradient(left, transparent 60%, #fff 60%), -webkit-linear-gradient(left, #ccc, #82b440);
     background-image: linear-gradient(to right, transparent 60%, #fff 60%), linear-gradient(to right, #ccc, #82b440)
 }
-
 .step--line:before {
     top: 0;
     left: 3px
 }
-
 .step--line:after {
     top: 1px;
     left: 0
 }
-
 .step--item {
     margin-bottom: 53px;
     margin-top: 53px;
 }
-
 .step--line~.step--item:after,
 .step--line~.step--item:before {
     content: " ";
@@ -2000,23 +1912,19 @@ h2.h2dev {
     background-position: center;
     background-repeat: no-repeat
 }
-
 .step--line~.step--item:nth-child(2):before {
     background-image: url(../img/steps-img/icon-rocket.png)
 }
-
 .owl-item.active+.owl-item.active+.owl-item.active+.owl-item.active+.owl-item.active+.owl-item.active .domain-search--ext:before,
 .step--line~.step--item:after {
     display: none
 }
-
 .step--line~.step--item:last-child:after {
     display: block;
     left: auto;
     right: -15px;
     background-image: url(../img/steps-img/icon-rocket-colored.png)
 }
-
 .step--icon {
     display: inline-block;
     position: relative;
@@ -2027,7 +1935,6 @@ h2.h2dev {
     border-radius: 50%;
     z-index: 0
 }
-
 .step--icon:before {
     content: " ";
     position: absolute;
@@ -2040,20 +1947,17 @@ h2.h2dev {
     box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
     z-index: -1
 }
-
 .step--icon .fa {
     color: #82b440;
     font-size: 36px;
     line-height: 48px
 }
-
 .step--content .h3 {
     margin: 0 0 12px;
     color: #222;
     font-size: 20px;
     line-height: 32px
 }
-
 .domain-search--title .h2 {
     margin: -9px 0 0;
     color: #222;
@@ -2061,19 +1965,16 @@ h2.h2dev {
     line-height: 36px;
     font-weight: 700
 }
-
 .domain-search--title .h3 {
     margin: 0;
     font-size: 24px;
     line-height: 36px;
     font-weight: 400
 }
-
 .domain-search--form {
     margin-top: 35px;
     padding-right: 10px
 }
-
 .domain-search--form form {
     position: relative;
     padding: 50px 20px;
@@ -2082,7 +1983,6 @@ h2.h2dev {
     text-align: center;
     z-index: 0
 }
-
 .domain-search--form form:after,
 .domain-search--form form:before {
     content: " ";
@@ -2092,48 +1992,40 @@ h2.h2dev {
     border-radius: 2px;
     z-index: -1
 }
-
 .domain-search--form form:before {
     top: 10px;
     left: 10px;
     border: 1px dashed #82b440
 }
-
 .domain-search--form form:after {
     top: 0;
     left: 0;
     background-color: #fff
 }
-
 .domain-search--form .inline-block {
     display: inline-block;
     vertical-align: middle
 }
-
 .domain-search--form .input-group {
     max-width: 380px;
     margin: 0 auto
 }
-
 .domain-search--form .input-group-addon {
     padding-top: 9px;
     padding-bottom: 8px;
     background-color: #ededed;
     border-color: #ededed
 }
-
 .domain-search--form .input-group-addon:first-child {
     color: #999;
     border-radius: 20px 0 0 20px;
     font-style: italic
 }
-
 .domain-search--form .input-group-addon:last-child {
     padding-top: 8px;
     padding-bottom: 9px;
     border-radius: 0 20px 20px 0
 }
-
 .domain-search--form .input-group .form-control {
     height: 40px;
     padding: 9px 15px;
@@ -2142,7 +2034,6 @@ h2.h2dev {
     box-shadow: none;
     font-style: italic
 }
-
 .domain-search--form .input-group-addon select {
     padding-right: 7px;
     color: #222;
@@ -2151,22 +2042,18 @@ h2.h2dev {
     font-weight: 600;
     outline: 0
 }
-
 .domain-search--form form button[type=submit],
 .product--details-tab-nav ul li+li {
     margin-left: 20px
 }
-
 .domain-search--exts {
     margin-top: 50px
 }
-
 .domain-search--ext {
     position: relative;
     padding: 0 6px;
     text-align: center
 }
-
 .domain-search--ext:before {
     content: " ";
     position: absolute;
@@ -2176,14 +2063,12 @@ h2.h2dev {
     width: 1px;
     background-color: #fff
 }
-
 .domain-search--ext .h4 {
     margin: 0;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 600
 }
-
 .service--item {
     margin-bottom: 60px;
     padding: 21px 15px 30px;
@@ -2192,13 +2077,11 @@ h2.h2dev {
     transition: border-color .25s, box-shadow .25s ease-in-out;
     text-align: center
 }
-
 .service--item.active,
 .service--item:hover {
     border-color: transparent;
     box-shadow: 0 3px 20px rgba(0, 0, 0, .1)
 }
-
 .service--item .fa {
     color: #222;
     font-size: 48px;
@@ -2206,55 +2089,45 @@ h2.h2dev {
     -webkit-transition: color .25s;
     transition: color .25s
 }
-
 .service--item.active .fa,
 .service--item:hover .fa {
     color: #82b440
 }
-
 .service--item .h4 {
     margin: 15px 0 17px;
     color: #82b440;
     font-size: 20px
 }
-
 .service--item .btn-link {
     margin-top: 9px
 }
-
 .service--item.active .btn-link,
 .service--item:hover .btn-link {
     color: #82b440;
     border-color: #82b440
 }
-
 .galeria {
     padding: 100px 0;
 }
-
 #servicesTab,
 #testimonial {
     z-index: 0
 }
-
 .service--tabs,
 .service-tab--nav {
     margin-top: 30px
 }
-
 .service-tab--nav ul {
     margin: 0;
     padding: 35px;
     list-style: none
 }
-
 .service-tab--nav ul li {
     padding-top: 15px;
     padding-bottom: 15px;
     color: #222;
     text-align: center
 }
-
 .service-tab--nav ul li>div {
     border: 1px solid #999;
     border-radius: 10px;
@@ -2263,61 +2136,63 @@ h2.h2dev {
     -webkit-transition: background-color .25s ease-in-out, border-color .25s;
     transition: background-color .25s ease-in-out, border-color .25s
 }
-
 .service-tab--nav ul li>div .item {
     background-color: #E8E8E8;
-    background-image: /* gloss gradient */
-    -webkit-gradient( linear, left bottom, left top, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(255, 255, 255, 0.2))), /* dark outside gradient */
-    -webkit-gradient( linear, left top, right top, color-stop(0%, rgba(210, 210, 210, 0.3)), color-stop(20%, rgba(210, 210, 210, 0)), color-stop(80%, rgba(210, 210, 210, 0)), color-stop(100%, rgba(210, 210, 210, 0.3))), /* light inner gradient */
-    -webkit-gradient( linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(20%, rgba(255, 255, 255, 0.5)), color-stop(80%, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(255, 255, 255, 0))), /* diagonal line pattern */
+    background-image:
+    /* gloss gradient */
+
+    -webkit-gradient( linear, left bottom, left top, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(255, 255, 255, 0.2))),
+    /* dark outside gradient */
+
+    -webkit-gradient( linear, left top, right top, color-stop(0%, rgba(210, 210, 210, 0.3)), color-stop(20%, rgba(210, 210, 210, 0)), color-stop(80%, rgba(210, 210, 210, 0)), color-stop(100%, rgba(210, 210, 210, 0.3))),
+    /* light inner gradient */
+
+    -webkit-gradient( linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(20%, rgba(255, 255, 255, 0.5)), color-stop(80%, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(255, 255, 255, 0))),
+    /* diagonal line pattern */
+
     -webkit-gradient( linear, 0% 100%, 100% 0%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(40%, rgba(255, 255, 255, 0)), color-stop(40%, #D2D2D1), color-stop(60%, #D2D2D1), color-stop(60%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0)));
-    -webkit-box-shadow: 0px -1px #fff, /* top highlight */
+    -webkit-box-shadow: 0px -1px #fff,
+    /* top highlight */
+
     0px 1px 1px #FFFFFF;
     /* bottom edge */
+
     -webkit-background-size: 100%, 100%, 100%, 4px 4px;
     -webkit-border-radius: 10px;
     -webkit-transition: -webkit-transform .1s ease-in-out;
     padding: 10px;
 }
-
 .service-tab--nav ul li>div .item:hover {
     color: #d41628;
     cursor: pointer;
 }
-
 .service-tab--nav ul li>div .item:active {
     -webkit-box-shadow: 0px 3px rgba(128, 128, 128, 1), 0px 4px rgba(118, 118, 118, 1), 0px 5px rgba(108, 108, 108, 1), 0px 6px rgba(98, 98, 98, 1), 0px 7px rgba(88, 88, 88, 1), 0px 8px rgba(78, 78, 78, 1), 0px 10px 2px 0px rgba(128, 128, 128, .6);
 }
-
 .service-tab--nav ul li.active>div {
     color: #d41628;
     -webkit-transform: translate(0, 5px);
     box-shadow: 0px 3px rgba(128, 128, 128, 1), 0px 4px rgba(118, 118, 118, 1), 0px 5px rgba(108, 108, 108, 1), 0px 6px rgba(98, 98, 98, 1), 0px 7px rgba(88, 88, 88, 1), 0px 8px rgba(78, 78, 78, 1), 0px 14px 6px -1px rgba(128, 128, 128, 1), 0px -3px rgba(128, 128, 128, 1), 0px -4px 6px -1px rgba(128, 128, 128, 1);
 }
-
 .service-tab--nav ul li .fa,
 .service-tab--nav ul li .h3 {
     font-size: 35px;
     -webkit-transition: color .25s;
     transition: color .25s
 }
-
 .service-tab--nav ul li .h3 {
     margin: 13px 0 17px;
     font-size: 20px;
     line-height: 32px
 }
-
 .service-tab--nav ul li.active a,
 .service-tab--nav ul li:hover a {
     color: #fff;
     border-color: #fff
 }
-
 .service--tabs {
     margin-bottom: 30px
 }
-
 .service--tabs:before {
     content: " ";
     position: absolute;
@@ -2328,7 +2203,6 @@ h2.h2dev {
     border: 1px dashed #82b440;
     z-index: -1
 }
-
 .service--tabs .tab-pane .title {
     display: inline-block;
     margin: 25px 0 22px;
@@ -2336,45 +2210,37 @@ h2.h2dev {
     color: #222;
     border-bottom: 1px solid #999
 }
-
 .service--tabs .tab-pane p {
     margin: 12px 0 16px
 }
-
 .service--tabs .tab-pane ul {
     padding: 0;
     list-style: none
 }
-
 .service--tabs .tab-pane ul li {
     margin-bottom: 6px;
     -webkit-transition: color .25s;
     transition: color .25s
 }
-
 .service--tabs .tab-pane ul li:hover,
 .service--tabs .tab-pane ul li:hover .fa {
     color: #92b440
 }
-
 .service--tabs .tab-pane ul li:last-child {
     margin-bottom: 0
 }
-
 .service--tabs .tab-pane ul li .fa {
     margin-right: 10px;
     color: #999;
     -webkit-transition: color .25s;
     transition: color .25s
 }
-
 .feature--item {
     position: relative;
     margin-bottom: 53px;
     padding-left: 62px;
     color: #999
 }
-
 .feature--item i {
     position: absolute;
     top: -5px;
@@ -2384,28 +2250,23 @@ h2.h2dev {
     font-weight: 300;
     font-style: normal
 }
-
 .feature--item .h4 {
     margin: -3px 0 18px;
     color: #222
 }
-
 .feature--video {
     font-size: 18px;
     line-height: 30px;
     text-align: center
 }
-
 .feature--video.bg--overlay:before {
     opacity: .4;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)"
 }
-
 .feature--video .h1 {
     margin: -12px 0 68px;
     font-weight: 700
 }
-
 .feature--video-play-btn {
     display: block;
     position: relative;
@@ -2421,7 +2282,6 @@ h2.h2dev {
     text-align: center;
     z-index: 0
 }
-
 .feature--video-play-btn:before {
     content: " ";
     position: absolute;
@@ -2433,15 +2293,12 @@ h2.h2dev {
     border-radius: 50%;
     z-index: -1
 }
-
 .feature--video p:last-child {
     margin-bottom: -8px
 }
-
 .portfolio--filter-nav {
     margin-bottom: 80px
 }
-
 .portfolio--filter-nav ul {
     margin: 0;
     padding: 0;
@@ -2450,34 +2307,27 @@ h2.h2dev {
     line-height: 0;
     text-align: center
 }
-
 .portfolio--filter-nav ul li {
     display: inline-block
 }
-
 .portfolio--filter-nav ul li a {
     border-radius: 0
 }
-
 .portfolio--filter-nav ul li~li a,
 .pricing--tab-nav ul li~li a {
     border-left: 0
 }
-
 .portfolio--filter-nav ul li:first-child a {
     border-radius: 20px 0 0 20px
 }
-
 .portfolio--filter-nav ul li:last-child a {
     border-radius: 0 20px 20px 0
 }
-
 .portfolio--filter-nav ul li.active a {
     color: #fff;
     background-color: #82b440;
     border-color: #82b440
 }
-
 .portfolio--filter-nav.triangle--on ul li a:before,
 .pricing--tab-nav.triangle--on ul li a:before {
     content: " ";
@@ -2492,27 +2342,22 @@ h2.h2dev {
     border-width: 7.5px 7.5px 0;
     border-color: transparent
 }
-
 .portfolio--filter-nav.triangle--on ul li.active a:before,
 .pricing--tab-nav.triangle--on ul li.active a:before {
     border-top-color: #82b440
 }
-
 .portfolio--item {
     margin-bottom: 60px
 }
-
 .portfolio--filter-nav.triangle--on ul li a,
 .portfolio--item-img {
     position: relative;
     z-index: 0
 }
-
 .portfolio--item-img img,
 .product--item-img img {
     width: 100%
 }
-
 .portfolio--item-img i.fa,
 .portfolio--item-img:after,
 .portfolio--item-img:before {
@@ -2522,12 +2367,10 @@ h2.h2dev {
     -webkit-transition: opacity .25s ease-in-out;
     transition: opacity .25s ease-in-out
 }
-
 .portfolio--item-img:after,
 .portfolio--item-img:before {
     content: " "
 }
-
 .portfolio--item-img i.fa {
     top: 50%;
     left: 0;
@@ -2537,13 +2380,11 @@ h2.h2dev {
     font-size: 24px;
     text-align: center
 }
-
 .portfolio--item:hover .portfolio--item-img i.fa,
 .portfolio--item:hover .portfolio--item-img:after {
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
 }
-
 .portfolio--item-img:before {
     top: 0;
     left: 0;
@@ -2551,12 +2392,10 @@ h2.h2dev {
     height: 100%;
     background-color: #82b440
 }
-
 .portfolio--item:hover .portfolio--item-img:before {
     opacity: .85;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)"
 }
-
 .portfolio--item-img:after {
     top: 10px;
     left: 10px;
@@ -2564,14 +2403,12 @@ h2.h2dev {
     bottom: 10px;
     border: 1px solid #fff
 }
-
 .portfolio--item-info,
 .portfolio--item-info .h4 {
     color: #999;
     -webkit-transition: color .25s;
     transition: color .25s
 }
-
 .checkout--info>p a:hover,
 .portfolio--item:hover .portfolio--item-info,
 .portfolio--item:hover .portfolio--item-info .h4,
@@ -2582,29 +2419,24 @@ h2.h2dev {
 .review--form .product--rating .br-widget a.br-selected:after {
     color: #82b440
 }
-
 .portfolio--item-info .h4 {
     margin: 7px 0 3px;
     color: #222;
     line-height: 30px
 }
-
 .product--details-tab-nav ul,
 .product--items {
     margin-bottom: 0;
     padding-left: 0;
     list-style: none
 }
-
 .product--item {
     margin-bottom: 60px
 }
-
 .product--item-img {
     position: relative;
     overflow: hidden
 }
-
 .product--item-img .figcaption {
     position: absolute;
     top: 0;
@@ -2616,22 +2448,18 @@ h2.h2dev {
     -webkit-transition: opacity .25s ease-in-out;
     transition: opacity .25s ease-in-out
 }
-
 .product--item:hover .product--item-img .figcaption {
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
 }
-
 .product--item-img .figcaption:before {
     opacity: .6;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"
 }
-
 .product--item-img .figcaption .btn-groups {
     font-size: 0;
     line-height: 0
 }
-
 .product--item-img .figcaption .btn-groups .btn {
     width: 40px;
     padding-left: 0;
@@ -2641,15 +2469,12 @@ h2.h2dev {
     border-color: #fff;
     border-radius: 4px
 }
-
 .product--item-img .figcaption .btn-groups .btn+.btn {
     margin-left: 10px
 }
-
 .product--item-img .figcaption .btn.active {
     margin-top: 10px
 }
-
 .product--item-onsale {
     display: block;
     position: absolute;
@@ -2668,7 +2493,6 @@ h2.h2dev {
     transform: rotate(-45deg);
     z-index: 0
 }
-
 .product--item-onsale:before {
     content: " ";
     position: absolute;
@@ -2678,38 +2502,30 @@ h2.h2dev {
     height: 1px;
     background-color: #fff
 }
-
 .product--item-info {
     margin-top: 27px
 }
-
 .product--item-info .h4 {
     margin: 0
 }
-
 .product--item-info .price {
     margin-top: 10px
 }
-
 .product--item-info .price del {
     margin-left: 10px;
     color: #555;
     font-weight: 400
 }
-
 .product--item .product--rating {
     margin-top: 11px
 }
-
 .product--single-gallery .thumbnails {
     margin-top: 20px;
     padding: 0 35px
 }
-
 .product--single-gallery .thumbnails .owl-nav {
     color: #999
 }
-
 .product--single-gallery .thumbnails .owl-nav .owl-next,
 .product--single-gallery .thumbnails .owl-nav .owl-prev {
     width: 32px;
@@ -2719,49 +2535,38 @@ h2.h2dev {
     font-size: 14px;
     line-height: 24px
 }
-
 .product--single-gallery .thumbnails .owl-nav .owl-next {
     text-align: left
 }
-
 .product--single-gallery .thumbnails .owl-nav .owl-prev {
     text-align: right
 }
-
 .product--single-gallery .thumbnails .owl-nav .owl-next {
     right: 0
 }
-
 .product--single-gallery .thumbnails .owl-nav .owl-prev:before {
     content: "Prev";
     display: block
 }
-
 .product--single-gallery .thumbnails .owl-nav .owl-prev .fa:before {
     content: "\f177"
 }
-
 .product--single-gallery .thumbnails .owl-nav .owl-next:before {
     content: "Next";
     display: block
 }
-
 .product--single-gallery .thumbnails .owl-nav .owl-next .fa:before {
     content: "\f178"
 }
-
 .product--summery .title {
     margin-top: -3px
 }
-
 .product--summery .product--rating {
     margin: 25px 0 20px
 }
-
 .product--summery .subtitle {
     color: #999
 }
-
 .product--item-info,
 .product--summery .price strong,
 .product--summery .social--widget li span,
@@ -2769,52 +2574,43 @@ h2.h2dev {
     color: #222;
     font-weight: 600
 }
-
 .product--summery .price {
     margin-top: 14px;
     color: #999;
     font-size: 18px;
     line-height: 30px
 }
-
 .product--summery .btn-groups .btn+.btn,
 .product--summery .price del {
     margin-left: 10px
 }
-
 .product--summery .btn-groups {
     margin-top: 10px;
     font-size: 0;
     line-height: 0
 }
-
 .product--summery .btn-groups .btn {
     padding-left: 12.5px;
     padding-right: 12.5px;
     border-radius: 4px
 }
-
 .product--summery .social--widget {
     margin-top: 24px;
     color: #999
 }
-
 .product--details {
     margin-top: 60px
 }
-
 .product--details-tab-nav {
     padding-bottom: 11px;
     border-bottom: 1px solid #eee
 }
-
 .product--details-tab-nav ul:after,
 .product--details-tab-nav ul:before {
     content: " ";
     display: table;
     clear: both
 }
-
 .product--details-tab-nav ul li {
     float: left;
     color: #222;
@@ -2823,126 +2619,101 @@ h2.h2dev {
     line-height: 30px;
     font-weight: 500
 }
-
 .product--details-tab-nav ul li+li:before {
     content: "|";
     margin-right: 20px;
     color: #999
 }
-
 .product--details .tab-content {
     margin-top: 24px
 }
-
 .product--details .table {
     margin-top: 23px
 }
-
 .product--details .table:first-child {
     margin-top: 0
 }
-
 .faq--item .panel-body ol:last-child,
 .faq--item .panel-body ul:last-child,
 .product--details .table:last-child {
     margin-bottom: 0
 }
-
 .product--details .table tr th {
     padding: 10px 30px;
     color: #222;
     font-weight: 500
 }
-
 .product--details .table tr td {
     padding: 10px 30px;
     color: #999
 }
-
 .review--items-title {
     padding-bottom: 9px;
     border-bottom: 1px solid #eee;
     line-height: 30px
 }
-
 .review--items-title.h4 {
     margin-bottom: 0
 }
-
 .review--item {
     margin-top: 30px;
     padding: 20px 20px 16px;
     background-color: #f9f9f9;
     border: 1px solid #eee
 }
-
 .review--form footer,
 .review--item+.review--item {
     margin-top: 20px
 }
-
 .review--item-title {
     color: #999
 }
-
 .review--item-title .img {
     float: left;
     margin-right: 20px
 }
-
 .review--item-title .info {
     float: left;
     overflow: hidden
 }
-
 .review--item-title .info .h5 {
     margin-bottom: 5px
 }
-
 .review--item-title .product--rating {
     float: right
 }
-
 .review--item-content {
     color: #999;
     font-style: italic
 }
-
 .review--form {
     margin-top: 22px
 }
-
 .review--form .product--rating {
     margin-top: 24px;
     margin-bottom: 15px
 }
-
 .review--form .product--rating label {
     margin-bottom: 11px;
     font-family: "Raleway", sans-serif;
     font-weight: 500
 }
-
 .review--form .product--rating .br-widget a {
     margin-right: 16px
 }
-
 .review--form .product--rating .br-widget a:last-child {
     margin-right: 0
 }
-
 .review--form .product--rating .br-widget a:after {
     color: #999;
     font-size: 14px;
     -webkit-transition: color .25s;
     transition: color .25s
 }
-
 .checkout--info-form .submit-btn-group .checkbox input,
 .review--form .product--rating .br-widget a[data-rating-value="0"] {
     display: none
 }
-
 .review--form .form-group label {
     display: block;
     margin-top: -1px;
@@ -2950,7 +2721,6 @@ h2.h2dev {
     font-family: "Raleway", sans-serif;
     font-weight: 500
 }
-
 .review--form .form-group .form-control {
     height: 40px;
     padding: 9px 20px;
@@ -2959,31 +2729,25 @@ h2.h2dev {
     box-shadow: none;
     outline: 0
 }
-
 .review--form footer .help-block {
     float: right;
     margin-top: -6px
 }
-
 .products--related {
     margin-top: 97px
 }
-
 .products--related .h4 {
     margin-bottom: 30px;
     padding-bottom: 12px;
     border-bottom: 1px solid #eee
 }
-
 .products--related .product--item {
     margin-bottom: 0
 }
-
 .cart--form .table {
     margin-top: -8px;
     margin-bottom: 0
 }
-
 .cart--form .table th {
     color: #222;
     font-family: "Raleway", sans-serif;
@@ -2992,18 +2756,15 @@ h2.h2dev {
     font-weight: 500;
     text-align: center
 }
-
 .cart--form .table td:first-child,
 .cart--form .table th:first-child {
     text-align: left
 }
-
 .cart--form .table td {
     font-weight: 600;
     vertical-align: middle;
     text-align: center
 }
-
 .cart--form .table tr td,
 .cart--form .table tr th {
     border-style: solid;
@@ -3011,23 +2772,18 @@ h2.h2dev {
     border-color: #eee;
     padding: 0 0 6px
 }
-
 .cart--form .table tr td {
     padding: 30px 0
 }
-
 .cart--form .table .product--quantity .form-control {
     margin: 0
 }
-
 .cart--form footer {
     margin-top: 30px
 }
-
 .cart--form footer .input-group {
     max-width: 360px
 }
-
 .cart--form footer .input-group .form-control {
     height: 40px;
     padding: 9px 30px 11px;
@@ -3038,38 +2794,31 @@ h2.h2dev {
     box-shadow: none;
     outline: 0
 }
-
 .cart--form footer .input-group-btn .btn {
     margin-left: 20px;
     border-radius: 20px
 }
-
 .cart--total .h4 {
     margin: 0;
     padding-bottom: 12px;
     color: #222;
     border-bottom: 1px solid #eee
 }
-
 .cart--total .table {
     margin-top: 30px;
     margin-bottom: 30px
 }
-
 .cart--total .table tr td,
 .cart--total .table tr th {
     padding: 10px 20px;
     border-color: #eee
 }
-
 .cart--total .table tr th {
     font-weight: 600
 }
-
 .cart--total .table tr td {
     text-align: right
 }
-
 .checkout--info>p {
     margin-bottom: 0;
     padding: 22px 30px;
@@ -3079,12 +2828,10 @@ h2.h2dev {
     line-height: 30px;
     font-weight: 500
 }
-
 .checkout--billing-info .form-group label+label,
 .checkout--info+.checkout--info {
     margin-top: 20px
 }
-
 .checkout--info-form {
     display: none;
     margin-top: 30px;
@@ -3092,22 +2839,18 @@ h2.h2dev {
     color: #999;
     border: 1px solid #eee
 }
-
 .checkout--info-form .form-group {
     margin: 10px 0 0
 }
-
 .checkout--info-form .form-group label {
     margin-bottom: 13px;
     color: #555;
     font-family: "Raleway", sans-serif;
     font-weight: 500
 }
-
 .checkout--info-form .form-group label span {
     color: red
 }
-
 .checkout--info-form .form-group input {
     height: 40px;
     padding: 9px 20px;
@@ -3117,13 +2860,11 @@ h2.h2dev {
     border-radius: 0;
     outline: 0
 }
-
 .checkout--info-form .submit-btn-group {
     margin-top: 30px;
     font-size: 0;
     line-height: 0
 }
-
 .checkout--info-form .submit-btn-group .checkbox {
     display: inline-block;
     margin: 0 0 0 20px;
@@ -3131,11 +2872,9 @@ h2.h2dev {
     line-height: 18px;
     vertical-align: middle
 }
-
 .checkout--info-form .submit-btn-group .checkbox label {
     padding-top: 0
 }
-
 .checkout--info-form .submit-btn-group .checkbox label input+span:after,
 .checkout--info-form .submit-btn-group .checkbox label span:before {
     content: " ";
@@ -3143,7 +2882,6 @@ h2.h2dev {
     top: 50%;
     border-radius: 50%
 }
-
 .checkout--info-form .submit-btn-group .checkbox label span:before {
     left: 0;
     width: 12px;
@@ -3151,7 +2889,6 @@ h2.h2dev {
     margin-top: -7px;
     border: 1px solid #eee
 }
-
 .checkout--info-form .submit-btn-group .checkbox label input+span:after {
     left: 3px;
     width: 6px;
@@ -3161,20 +2898,16 @@ h2.h2dev {
     -webkit-transition: background-color .25s ease-in-out;
     transition: background-color .25s ease-in-out
 }
-
 .checkout--info-form .submit-btn-group .checkbox label input:checked+span:after,
 .checkout--order-info .panel-title input:checked+span:after {
     background-color: #000
 }
-
 .checkout--info-form .help-block {
     margin-top: 23px
 }
-
 .checkout--info-form .input-group {
     margin-top: 7px
 }
-
 .checkout--info-form .input-group .form-control {
     height: 40px;
     padding: 9px 20px;
@@ -3185,47 +2918,39 @@ h2.h2dev {
     box-shadow: none;
     outline: 0
 }
-
 .checkout--info-form .input-group-btn .btn {
     margin-left: 20px;
     border-radius: 20px
 }
-
 .checkout--form-title {
     margin: 0;
     padding-bottom: 17px;
     color: #222;
     border-bottom: 1px solid #eee
 }
-
 .checkout--billing-info,
 .checkout--order-info {
     margin-bottom: 60px
 }
-
 .checkout--billing-info .form-group {
     margin-top: 24px;
     margin-bottom: 0
 }
-
 .checkout--billing-info .form-group label {
     display: block;
     margin-bottom: 0;
     font-weight: 400
 }
-
 .checkout--billing-info .form-group label span {
     display: block;
     margin-bottom: 13px;
     font-family: "Raleway", sans-serif;
     font-weight: 500
 }
-
 .checkout--billing-info .form-group label span em {
     color: red;
     font-style: normal
 }
-
 .checkout--billing-info .form-group .form-control {
     height: 40px;
     padding: 8px 20px 10px;
@@ -3237,79 +2962,63 @@ h2.h2dev {
     line-height: 20px;
     outline: 0
 }
-
 .checkout--billing-info .form-group textarea.form-control {
     height: auto;
     min-height: 100px
 }
-
 .checkout--billing-info .checkbox {
     margin-top: 13px
 }
-
 .checkout--billing-info .checkbox input {
     margin-top: 6px
 }
-
 .checkout--billing-info .checkbox.h4 {
     margin: 50px 0 30px
 }
-
 .checkout--billing-info .checkbox.h4 label {
     font-weight: 500
 }
-
 .checkout--billing-info .checkbox.h4 input {
     margin-top: 3px
 }
-
 .checkout--order-info .table {
     margin-top: 30px;
     margin-bottom: 0;
     border-color: #eee
 }
-
 .checkout--order-info .table tbody tr td,
 .checkout--order-info .table thead tr th {
     padding: 11px 20px;
     border-color: #eee
 }
-
 .checkout--order-info .table thead tr th {
     border-bottom: 0;
     font-family: "Raleway", sans-serif;
     font-weight: 500
 }
-
 .checkout--order-info .panel-group {
     padding: 11px 14px 14px;
     margin-top: 30px;
     margin-bottom: 0;
     border: 1px solid #eee
 }
-
 #pricingDetails .pricing--item.active,
 #pricingDetails .pricing--item:hover,
 .checkout--order-info .panel {
     box-shadow: none
 }
-
 .checkout--order-info .panel+.panel {
     margin-top: 0
 }
-
 .checkout--order-info .panel-title label {
     cursor: pointer
 }
-
 .checkout--order-info .panel+.panel .panel-title label {
     margin-bottom: 1px
 }
-
 .checkout--order-info .panel-title input {
     display: none
 }
-
 .checkout--order-info .panel-title span {
     display: block;
     position: relative;
@@ -3319,7 +3028,6 @@ h2.h2dev {
     line-height: 18px;
     font-weight: 600
 }
-
 .checkout--order-info .panel-title span:before {
     content: " ";
     position: absolute;
@@ -3330,7 +3038,6 @@ h2.h2dev {
     border: 1px solid #eee;
     border-radius: 50%
 }
-
 .checkout--order-info .panel-title span:after {
     content: " ";
     position: absolute;
@@ -3343,15 +3050,12 @@ h2.h2dev {
     -webkit-transition: background-color .25s ease-in-out;
     transition: background-color .25s ease-in-out
 }
-
 .checkout--order-info .panel-heading+.panel-collapse>.panel-body {
     border-top: 0
 }
-
 .checkout--order-info .panel-body {
     color: #999
 }
-
 .checkout--order-info .panel-body blockquote {
     position: relative;
     margin-bottom: 0;
@@ -3362,7 +3066,6 @@ h2.h2dev {
     line-height: 26px;
     z-index: 0
 }
-
 .checkout--order-info .panel-body blockquote:after,
 .checkout--order-info .panel-body blockquote:before {
     content: " ";
@@ -3372,7 +3075,6 @@ h2.h2dev {
     border-style: solid;
     border-color: transparent
 }
-
 .checkout--order-info .panel-body blockquote:before {
     top: -27px;
     left: 16px;
@@ -3380,7 +3082,6 @@ h2.h2dev {
     border-bottom-color: #f9f9f9;
     z-index: 1
 }
-
 .checkout--order-info .panel-body blockquote:after {
     top: -30px;
     left: 15px;
@@ -3388,20 +3089,17 @@ h2.h2dev {
     border-bottom-color: #eee;
     z-index: 0
 }
-
 .checkout--submit-btn {
     padding: 30px;
     border-style: solid;
     border-width: 0 1px 1px;
     border-color: #eee
 }
-
 .pricing--nav-switch {
     position: relative;
     margin-bottom: 40px;
     z-index: 0
 }
-
 .pricing--nav-switch .item--bg {
     position: absolute;
     top: 0;
@@ -3413,7 +3111,6 @@ h2.h2dev {
     transition: left .55s ease-in-out, width .55s ease-in-out;
     z-index: -1
 }
-
 .pricing--nav-switch ul,
 .pricing--tab-nav ul {
     margin: 0;
@@ -3423,23 +3120,19 @@ h2.h2dev {
     line-height: 0;
     text-align: center
 }
-
 .pricing--nav-switch ul li {
     display: inline-block;
     border: 1px solid #999;
     border-radius: 20px
 }
-
 .pricing--nav-switch ul li:first-child {
     border-right: 0;
     border-radius: 20px 0 0 20px
 }
-
 .pricing--nav-switch ul li:last-child {
     border-left: 0;
     border-radius: 0 20px 20px 0
 }
-
 .pricing--nav-switch ul li a {
     background-color: transparent;
     border-color: transparent;
@@ -3448,7 +3141,6 @@ h2.h2dev {
     -webkit-transition-delay: .25s;
     transition-delay: .25s
 }
-
 .pricing--nav-switch ul li a:active,
 .pricing--nav-switch ul li a:active:focus,
 .pricing--nav-switch ul li a:active:hover,
@@ -3458,44 +3150,35 @@ h2.h2dev {
     background-color: transparent;
     border-color: transparent
 }
-
 .pricing--nav-switch ul li.active a {
     color: #fff
 }
-
 .pricing--tab-nav {
     margin-bottom: 60px
 }
-
 .pricing--tab-nav ul li {
     display: inline-block
 }
-
 .pricing--tab-nav ul li a {
     border-radius: 0;
     font-family: "Raleway", sans-serif;
     font-weight: 700
 }
-
 .pricing--tab-nav ul li:first-child a {
     border-radius: 20px 0 0 20px
 }
-
 .pricing--tab-nav ul li:last-child a {
     border-radius: 0 20px 20px 0
 }
-
 .pricing--tab-nav ul li.active a {
     color: #fff;
     background-color: #82b440;
     border-color: #82b440
 }
-
 .pricing--tab-nav.triangle--on ul li a {
     position: relative;
     z-index: 0
 }
-
 .pricing--item {
     margin-bottom: 60px;
     background-color: #fff;
@@ -3504,18 +3187,15 @@ h2.h2dev {
     transition: box-shadow .25s ease-in-out;
     text-align: center
 }
-
 .pricing--item.active,
 .pricing--item:hover {
     box-shadow: 0 3px 30px rgba(0, 0, 0, .12)
 }
-
 .pricing--header {
     position: relative;
     padding: 22px 20px;
     border-radius: 2px 2px 0 0
 }
-
 .pricing--header:before {
     content: " ";
     position: absolute;
@@ -3527,73 +3207,58 @@ h2.h2dev {
     border-width: 15px 12.5px 0;
     border-color: #82b440 transparent transparent
 }
-
 .pricing--header .h4 {
     margin: 0;
     font-weight: 700
 }
-
 .pricing--price {
     padding: 36px 25px 23px
 }
-
 .pricing--price .h4 {
     margin: 0;
     line-height: 31px
 }
-
 .pricing--price .h4 strong {
     display: block;
     color: #82b440
 }
-
 .pricing--price .caption-text {
     margin-bottom: 2px;
     color: #222
 }
-
 .pricing--price .price-text {
     margin-bottom: 1px;
     color: #222
 }
-
 .pricing--price .price-text strong {
     color: #82b440;
     font-size: 30px;
     line-height: 42px
 }
-
 .pricing--price .price-text strong sup {
     font-weight: 400;
     font-size: 55%
 }
-
 .pricing--price .btn {
     margin-top: 13px
 }
-
 .pricing--features ul {
     border-top: 1px solid #eaeaea
 }
-
 .pricing--features ul li {
     padding: 8px 15px;
     border-bottom: 1px solid #eaeaea
 }
-
 .pricing--features ul li:nth-child(odd) {
     background-color: #f9f9f9
 }
-
 .pricing--features ul li strong {
     display: block;
     font-weight: 600
 }
-
 .pricing--footer {
     padding: 30px 15px
 }
-
 .pricing-items-border .pricing--features,
 .pricing-items-border .pricing--footer,
 .pricing-items-border .pricing--price {
@@ -3601,47 +3266,38 @@ h2.h2dev {
     border-width: 0 1px;
     border-color: #eaeaea
 }
-
 .pricing-items-border .pricing--footer {
     border-width: 0 1px 1px
 }
-
 #pricingDetails .pricing--item {
     border-style: solid;
     border-width: 0 1px 1px 0;
     border-color: #eee;
     border-radius: 0
 }
-
 #pricingDetails .pricing--header {
     border-radius: 0
 }
-
 #pricingDetails .pricing--item.first-child {
     border-left-width: 1px;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px
 }
-
 #pricingDetails .pricing--item.first-child .pricing--header {
     border-top-left-radius: 2px
 }
-
 #pricingDetails .col-md-3:last-child .pricing--item {
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px
 }
-
 #pricingDetails .col-md-3:last-child .pricing--header {
     border-top-right-radius: 2px
 }
-
 .pricing--table {
     margin-bottom: 0;
     color: #999;
     border-color: #eee
 }
-
 .pricing--table thead tr th,
 .vps-pricing--plans li {
     font-family: "Raleway", sans-serif;
@@ -3649,64 +3305,52 @@ h2.h2dev {
     line-height: 30px;
     font-weight: 500
 }
-
 .pricing--table thead tr th {
     color: #222;
     border-bottom: 0;
     border-color: #eee;
     padding: 12px 15px
 }
-
 .pricing--table.text-center thead tr th {
     text-align: center
 }
-
 .pricing--table tbody tr td {
     padding: 15px;
     border-color: #eee
 }
-
 .vps-pricing--wrapper .heading {
     margin: 0 0 40px;
     color: #222;
     font-weight: 400;
     text-align: center
 }
-
 .vps-pricing--slider.ui-widget {
     border-style: dashed;
     border-color: #82b440;
     border-radius: 0
 }
-
 .vps-pricing--slider .ui-widget-header {
     background-color: transparent
 }
-
 .login--form .checkbox input,
 .vps-pricing--slider .ui-slider-handle {
     display: none
 }
-
 .vps-pricing--plans {
     margin-top: 60px
 }
-
 .vps-pricing--plans li {
     padding: 10px 0;
     border-right: 2px solid #eee;
     text-align: center;
     cursor: pointer
 }
-
 .vps-pricing--plans li:last-child {
     border-right: 0
 }
-
 .vps-pricing--plans li.active {
     color: #82b440
 }
-
 .vps-pricing--plans li:after,
 .vps-pricing--plans li:before {
     content: " ";
@@ -3720,7 +3364,6 @@ h2.h2dev {
     -webkit-transition: opacity .25s;
     transition: opacity .25s
 }
-
 .vps-pricing--plans li:before {
     border: 1px solid #ddd;
     width: 30px;
@@ -3728,52 +3371,42 @@ h2.h2dev {
     margin: -21px auto 0;
     background-color: #fff
 }
-
 .vps-pricing--plans li.active:after,
 .vps-pricing--plans li.active:before {
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
 }
-
 .vps-pricing--plans li:after {
     width: 12px;
     height: 12px;
     margin: -12px auto 0;
     background-color: #82b440
 }
-
 .vps-pricing--feature .pricing--item {
     margin-bottom: 30px
 }
-
 .vps-pricing--feature .pricing--item:hover {
     box-shadow: none
 }
-
 .vps-pricing--feature .pricing--header {
     padding: 15px
 }
-
 .vps-pricing--feature .pricing--header:before {
     bottom: -10px;
     border-width: 10px 12.5px 0
 }
-
 .vps-pricing--feature .pricing--header .h5 {
     margin: 0;
     font-weight: 700
 }
-
 .vps-pricing--feature .pricing--price {
     border-style: solid;
     border-width: 0 1px 1px;
     border-color: #eaeaea
 }
-
 #domainPricing .pricing--tab-nav {
     margin-bottom: 80px
 }
-
 .domain-pricing--item {
     margin-bottom: 30px;
     padding: 6px 10px 13px;
@@ -3782,7 +3415,6 @@ h2.h2dev {
     border: 1px solid #ccc;
     text-align: center
 }
-
 .domain-pricing--item .title {
     margin-bottom: 0;
     color: #82b440;
@@ -3790,40 +3422,32 @@ h2.h2dev {
     line-height: 38px;
     font-weight: 700
 }
-
 .domain-pricing--item .subtitle {
     margin-bottom: 1px;
     color: #222
 }
-
 .post--items .post--item {
     margin-bottom: 80px
 }
-
 .post--item.sticky {
     width: 100%
 }
-
 .post--header .post--title {
     margin: -8px 0 3px;
     font-size: 24px;
     line-height: 36px
 }
-
 .post--header .post--meta {
     color: #999
 }
-
 .post--img {
     position: relative;
     margin-top: 26px;
     overflow: hidden;
 }
-
 .noticias--img img {
     transition: .5s;
 }
-
 .post--img .contenedor {
     position: absolute;
     top: 0;
@@ -3836,7 +3460,6 @@ h2.h2dev {
     display: flex;
     justify-content: center;
 }
-
 .post--img .contenedor:before {
     content: '';
     position: absolute;
@@ -3848,7 +3471,6 @@ h2.h2dev {
     transform: translateX(-100%) scale(1) skew(-45deg);
     transition: .5s;
 }
-
 .contenedor .content {
     position: absolute;
     top: 50%;
@@ -3856,7 +3478,6 @@ h2.h2dev {
     padding: 30px 50px;
     text-align: center;
 }
-
 .contenedor .content h2 {
     padding: 0;
     color: #fff;
@@ -3865,7 +3486,6 @@ h2.h2dev {
     transform: translateY(-100%) scale(0);
     transition: .5s;
 }
-
 .contenedor .content .post--summery {
     padding: 0;
     color: #fff;
@@ -3874,42 +3494,34 @@ h2.h2dev {
     transition: .5s;
     opacity: 0;
 }
-
 .post--img:hover .contenedor .content h2 {
     transform: translateY(0) scale(1);
 }
-
 .post--img:hover .contenedor .content .post--summery {
     transform: scale(1);
     opacity: 1;
 }
-
 .noticias--img:hover img {
     transform: scale(2);
 }
-
 .post--img:hover .contenedor:before {
     opacity: 1;
     background: rgba(212, 22, 40, 0.8);
     transform: translateX(0) scale(1) skew(-45deg);
 }
-
 a.url--noticia:hover {
     color: #fdf90a;
 }
-
 .post--content,
 .post--summery {
     margin-top: 23px
 }
-
 .post--content blockquote {
     position: relative;
     margin: 30px 20px 50px;
     padding: 30px 30px 22px;
     z-index: 0
 }
-
 .post--content blockquote:after,
 .post--content blockquote:before {
     content: " ";
@@ -3917,21 +3529,18 @@ a.url--noticia:hover {
     width: 100%;
     height: 100%
 }
-
 .post--content blockquote:before {
     top: 0;
     left: 0;
     background-color: #f9f9f9;
     z-index: -1
 }
-
 .post--content blockquote:after {
     top: 10px;
     left: 10px;
     border: 1px dashed #82b440;
     z-index: -2
 }
-
 .post--content blockquote footer {
     position: relative;
     padding-left: 60px;
@@ -3942,7 +3551,6 @@ a.url--noticia:hover {
     line-height: 26px;
     font-weight: 500
 }
-
 .post--content blockquote footer:before {
     content: " ";
     position: absolute;
@@ -3952,12 +3560,10 @@ a.url--noticia:hover {
     height: 1px;
     background-color: #82b440
 }
-
 .post--action,
 .post--footer {
     margin-top: 30px
 }
-
 .post--footer {
     padding: 13px 0;
     color: #999;
@@ -3965,27 +3571,22 @@ a.url--noticia:hover {
     border-width: 1px 0;
     border-color: #eee
 }
-
 .post--footer .tags--widget {
     margin-top: -5px
 }
-
 #counter.bg--overlay:before {
     background-color: #fff;
     opacity: .7;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"
 }
-
 .contador {
     background-color: #136497;
 }
-
 .counter--item {
     margin-bottom: 53px;
     color: #fff;
     text-align: center
 }
-
 .counter--item p {
     margin: -14px 0 2px;
     font-size: 48px;
@@ -3993,26 +3594,22 @@ a.url--noticia:hover {
     color: #fff;
     text-shadow: 2px 2px #292020;
 }
-
 .counter--item .h3 {
     margin: 0 0 8px;
     font-size: 18px;
     line-height: 30px;
     text-shadow: 2px 2px #292020;
 }
-
 .counter--item .fa {
     font-size: 30px;
     line-height: 42px;
     text-shadow: 2px 2px #292020;
 }
-
 #counter.counter-box.bg--overlay:before {
     background-color: #000;
     opacity: .4;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)"
 }
-
 .counter-box .counter--item {
     position: relative;
     margin-top: 14px;
@@ -4024,14 +3621,12 @@ a.url--noticia:hover {
     border-radius: 2px;
     z-index: 0
 }
-
 .counter-box .counter--item:after,
 .counter-box .counter--item:before {
     content: " ";
     position: absolute;
     border-radius: 2px
 }
-
 .counter-box .counter--item:before {
     top: 10px;
     right: -10px;
@@ -4040,7 +3635,6 @@ a.url--noticia:hover {
     border-top: 1px dashed #fff;
     border-right: 1px dashed #fff
 }
-
 .counter-box .counter--item:after {
     left: 10px;
     bottom: -10px;
@@ -4049,7 +3643,6 @@ a.url--noticia:hover {
     border-left: 1px dashed #fff;
     border-bottom: 1px dashed #fff
 }
-
 .testimonial--slider .owl-dots {
     margin-top: 50px;
     margin-bottom: -10px;
@@ -4057,7 +3650,6 @@ a.url--noticia:hover {
     line-height: 0;
     text-align: center
 }
-
 .team--members .owl-dots .owl-dot,
 .testimonial--slider .owl-dots .owl-dot {
     display: inline-block;
@@ -4070,22 +3662,18 @@ a.url--noticia:hover {
     -webkit-transition: padding .25s, border-color .5s;
     transition: padding .25s, border-color .5s
 }
-
 .testimonial--slider .owl-dots .owl-dot.active {
     padding: 5px;
     border-color: #fff
 }
-
 .testimonial--item {
     padding-right: 10px
 }
-
 .testimonial--img {
     position: relative;
     padding-left: 25px;
     z-index: 0
 }
-
 .testimonial--img figure:before,
 .testimonial--img:before {
     content: " ";
@@ -4095,13 +3683,11 @@ a.url--noticia:hover {
     background-color: #fff;
     z-index: -1
 }
-
 .testimonial--img:before {
     bottom: 0;
     top: 60%;
     border-radius: 2px 2px 0 0
 }
-
 .testimonial--img figure {
     position: relative;
     width: 90px;
@@ -4111,13 +3697,11 @@ a.url--noticia:hover {
     border-radius: 50%;
     z-index: 0
 }
-
 .testimonial--img figure:before {
     top: 0;
     height: 100%;
     border-radius: 50%
 }
-
 .testimonial--img figure:after {
     content: " ";
     position: absolute;
@@ -4128,11 +3712,9 @@ a.url--noticia:hover {
     border-top: 1px dashed #82b440;
     border-radius: 50%
 }
-
 .owl-item .testimonial--img img {
     width: auto
 }
-
 .testimonial--content {
     position: relative;
     margin-bottom: 10px;
@@ -4140,7 +3722,6 @@ a.url--noticia:hover {
     background-color: #fff;
     border-radius: 2px
 }
-
 .testimonial--content:before {
     content: " ";
     position: absolute;
@@ -4151,11 +3732,9 @@ a.url--noticia:hover {
     border: 1px dashed #82b440;
     z-index: -1
 }
-
 .testimonial--img .testimonial--content {
     border-radius: 0 0 2px 2px
 }
-
 .testimonial--content blockquote {
     margin-bottom: 16px;
     padding: 0;
@@ -4163,45 +3742,37 @@ a.url--noticia:hover {
     font-size: 14px;
     line-height: 26px
 }
-
 .testimonial--content blockquote .fa {
     color: #eee;
     font-size: 30px
 }
-
 .testimonial--content .h4 {
     margin: 0 0 3px;
     color: #222;
     text-align: right
 }
-
 .testimonial--content .subtitle {
     color: #999;
     font-family: "Raleway", sans-serif;
     text-align: right
 }
-
 .team--members .owl-dots {
     margin-top: 50px;
     font-size: 0;
     line-height: 0;
     text-align: center
 }
-
 .team--members .owl-dots .owl-dot {
     padding: 0
 }
-
 .team--members .owl-dots .owl-dot.active {
     padding: 5px;
     border-color: #a0a0a0
 }
-
 .login--form footer,
 .team--member {
     text-align: center
 }
-
 .team--member-content {
     position: absolute;
     top: auto;
@@ -4215,12 +3786,10 @@ a.url--noticia:hover {
     overflow: hidden;
     z-index: 0
 }
-
 .team--member:hover .team--member-content {
     padding-top: 38px;
     height: 100%
 }
-
 .team--member-content:before {
     content: " ";
     position: absolute;
@@ -4235,63 +3804,51 @@ a.url--noticia:hover {
     transition: top .25s ease-in-out, opacity .25s ease-in-out;
     z-index: -1
 }
-
 .team--member:hover .team--member-content:before {
     top: 20px;
     opacity: .92
 }
-
 .team--member-content .h4 {
     margin: 0 0 5px;
     color: #222;
     font-weight: 600
 }
-
 .team--member-content .social--widget {
     margin-top: 20px;
     color: #999
 }
-
 .team--member-content .social--widget li {
     float: none;
     display: inline-block
 }
-
 .team--member-content .social--widget li:first-child {
     display: block;
     color: #222;
     font-family: "Raleway", sans-serif;
     font-weight: 500
 }
-
 .contact--info-item p,
 .faq--items,
 .page--content .faq--item .panel-title {
     margin-bottom: 0
 }
-
 .faq--item {
     border: 0;
     box-shadow: none
 }
-
 .faq--item.panel {
     border-radius: 0
 }
-
 .faq--item.panel+.faq--item.panel {
     margin-top: 15px
 }
-
 .faq--item .panel-heading {
     padding: 0;
     border-radius: 0
 }
-
 .faq--item .panel-title {
     font-size: 18px
 }
-
 .faq--item .panel-title a {
     display: block;
     position: relative;
@@ -4299,7 +3856,6 @@ a.url--noticia:hover {
     color: #fff;
     border-left: 3px solid #000
 }
-
 .faq--item .panel-title a:before {
     content: "\f103";
     position: absolute;
@@ -4311,34 +3867,28 @@ a.url--noticia:hover {
     transition: transform .25s ease-in-out;
     transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out
 }
-
 .faq--item .panel-title a.collapsed {
     color: #222;
     background-color: #ddd;
     border-color: transparent
 }
-
 .faq--item .panel-title a.collapsed:before {
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg)
 }
-
 .faq--item .panel-body,
 .login--wrapper {
     padding: 20px;
     box-shadow: 0 1px 15px rgba(0, 0, 0, .1)
 }
-
 .faq--item .panel-heading+.panel-collapse .panel-body {
     border: 0
 }
-
 .contact--info-item p span,
 .f0f--content p a,
 .faq--item .panel-body a {
     color: #82b440
 }
-
 .faq--item .panel-body blockquote {
     margin-bottom: 15px;
     padding: 0 0 0 15px;
@@ -4346,21 +3896,17 @@ a.url--noticia:hover {
     font-size: 14px;
     line-height: 26px
 }
-
 .faq--item .panel-body ol {
     list-style-type: decimal-leading-zero
 }
-
 #datacenter .datacenter-tabs--widget {
     margin-top: 86px
 }
-
 .login--wrapper {
     position: relative;
     padding: 0 15px;
     border-radius: 4px
 }
-
 .login--wrapper:before {
     content: " ";
     position: absolute;
@@ -4370,28 +3916,23 @@ a.url--noticia:hover {
     width: 1px;
     background-color: #eee
 }
-
 .faq--item .panel-body li,
 .login--content {
     color: #999
 }
-
 .login--text .h1 {
     margin: 25px 0 16px;
     color: #222;
     font-weight: 700
 }
-
 .login--content .social--widget {
     display: inline-block;
     margin-top: 17px
 }
-
 .login--form .input-group {
     width: 100%;
     z-index: 0
 }
-
 .login--form .input-group-addon:after,
 .login--form .input-group-addon:before {
     content: " ";
@@ -4403,21 +3944,18 @@ a.url--noticia:hover {
     border-color: transparent;
     z-index: 4
 }
-
 .login--form .input-group-addon:before {
     right: -7px;
     margin-top: -7px;
     border-width: 7px 0 7px 7px;
     border-left-color: #eee
 }
-
 .login--form .input-group-addon:after {
     right: -6px;
     margin-top: -5px;
     border-width: 5px 0 5px 7px;
     border-left-color: #fff
 }
-
 .login--form .input-group-addon {
     position: relative;
     min-width: 50px;
@@ -4427,7 +3965,6 @@ a.url--noticia:hover {
     border-radius: 20px 0 0 20px;
     text-align: center
 }
-
 .login--form .form-control {
     height: 40px;
     padding: 9px 20px;
@@ -4437,17 +3974,14 @@ a.url--noticia:hover {
     box-shadow: none;
     outline: 0
 }
-
 .login--form .checkbox {
     margin: 0;
     color: #999
 }
-
 .login--form .checkbox label {
     position: relative;
     padding-left: 25px
 }
-
 .login--form .checkbox span:before {
     content: " ";
     display: block;
@@ -4466,51 +4000,41 @@ a.url--noticia:hover {
     -webkit-transition: color .25s, border-color .25s;
     transition: color .25s, border-color .25s
 }
-
 .login--form .checkbox input:checked+span:before {
     content: "\f00c";
     color: #82b440;
     border-color: #82b440
 }
-
 .login--form .help-block {
     margin: 25px 0;
     font-size: 12px
 }
-
 .login--form .help-block .btn-link {
     color: #82b440;
     border-color: #82b440
 }
-
 .login--form footer .btn.active {
     padding-left: 60px;
     padding-right: 60px
 }
-
 .login--form footer .or {
     display: inline-block;
     padding: 8px 0
 }
-
 .contact--info {
     color: #999;
     text-align: center
 }
-
 .contact--info-item {
     margin-bottom: 60px
 }
-
 .contact--info-item .h3 {
     margin: -3px 0 18px;
     color: #222
 }
-
 .contact--form {
     position: relative
 }
-
 .contact--form-wrapper {
     position: absolute;
     top: 0;
@@ -4518,22 +4042,18 @@ a.url--noticia:hover {
     width: 100%;
     z-index: 1
 }
-
 .contact--form form {
     padding: 60px 30px;
     background-color: #fff;
     box-shadow: 0 3px 10px rgba(0, 0, 0, .15)
 }
-
 .brand--item,
 .contact--form .form-group {
     margin-bottom: 30px
 }
-
 .contact--form .form-group:last-child {
     margin-bottom: 0
 }
-
 .contact--form label {
     display: block;
     margin-top: -6px;
@@ -4541,7 +4061,6 @@ a.url--noticia:hover {
     font-family: "Raleway", sans-serif;
     font-weight: 500
 }
-
 .contact--form .form-control {
     height: 40px;
     padding: 8px 20px 10px;
@@ -4550,17 +4069,14 @@ a.url--noticia:hover {
     border-radius: 0;
     box-shadow: none
 }
-
 .contact--form textarea {
     min-height: 170px
 }
-
 .contact--form-status .alert {
     margin-bottom: 30px;
     padding: 15px 20px;
     border-radius: 0
 }
-
 .brand--img {
     height: 131px;
     display: flex;
@@ -4570,32 +4086,26 @@ a.url--noticia:hover {
     -webkit-transition: border-color .25s, box-shadow .25s ease-in-out;
     transition: border-color .25s, box-shadow .25s ease-in-out
 }
-
 .brand--img:hover {
     border-color: #82b440;
     box-shadow: 0 1px 10px rgba(0, 0, 0, .1)
 }
-
 .brand--img img {
     opacity: .3;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
     -webkit-transition: opacity .25s ease-in-out;
     transition: opacity .25s ease-in-out
 }
-
 .brand--img:hover img {
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
 }
-
 .f0f--content {
     margin-bottom: 40px
 }
-
 .f0f--content:last-child {
     margin-bottom: 0
 }
-
 .f0f--content .h1 {
     margin: -15px 0 60px;
     color: #222;
@@ -4603,17 +4113,14 @@ a.url--noticia:hover {
     line-height: 84px;
     font-weight: 700
 }
-
 .f0f--content p {
     margin: 35px 0 0;
     font-size: 24px;
     line-height: 36px
 }
-
 .call-to-action--content {
     padding: 50px 30px 50px 15px
 }
-
 .call-to-action--content:before {
     content: " ";
     position: absolute;
@@ -4624,17 +4131,14 @@ a.url--noticia:hover {
     background: -webkit-linear-gradient(top, transparent -10%, #eee 50%, transparent 110%);
     background: linear-gradient(to bottom, transparent -10%, #eee 50%, transparent 110%)
 }
-
 .call-to-action--title {
     margin: -3px 0 40px;
     color: #222;
     font-weight: 600
 }
-
 .subscribe--form {
     padding: 50px 15px 50px 30px
 }
-
 .subscribe--form .form-control {
     height: 40px;
     padding: 10px 0 9px;
@@ -4644,72 +4148,58 @@ a.url--noticia:hover {
     box-shadow: none;
     outline: 0
 }
-
 .subscribe--form .input-group-addon {
     padding: 0 0 0 30px;
     background-color: transparent;
     border: 0
 }
-
 .footer--title {
     display: table;
     margin-bottom: 40px;
     width: 200px;
 }
-
 .footer--title .text {
     display: table-cell;
     vertical-align: bottom
 }
-
 .footer--title .h4 {
     margin: 0;
     color: #222
 }
-
 .footer--widget {
     margin-bottom: 50px;
     color: #999
 }
-
 .footer--widget ul.directorio {
     padding: 0;
 }
-
 .footer--widget ul li {
     position: relative;
     list-style: none;
 }
-
 .footer--widget .about--widget a {
     margin-top: 8px
 }
-
 .footer--widget .about--widget ul li i {
     position: absolute;
     padding-right: 10px;
     font-size: 20px;
 }
-
 .footer--widget .about--widget ul li i.marcador {
     top: 25%;
 }
-
 .footer--widget .about--widget p {
     padding-left: 25px;
     position: relative;
     display: inline-block;
     margin-bottom: 10px;
 }
-
 .footer--widget .about--widget a.mail {
     color: #d41628;
 }
-
 .footer--widget .social--widget {
     margin-top: 14px
 }
-
 .footer--menu-wrapper {
     position: relative;
     margin: 0 -15px;
@@ -4717,7 +4207,6 @@ a.url--noticia:hover {
     border-width: 0 150px;
     border-color: #ededed
 }
-
 .footer--menu-wrapper:after,
 .footer--menu-wrapper:before {
     content: " ";
@@ -4727,19 +4216,16 @@ a.url--noticia:hover {
     height: 0;
     border-style: solid
 }
-
 .footer--menu-wrapper:before {
     left: -80px;
     border-width: 53px 80px 0 0;
     border-color: transparent #82b440 transparent transparent
 }
-
 .footer--menu-wrapper:after {
     right: -80px;
     border-width: 0 80px 53px 0;
     border-color: transparent transparent #82b440
 }
-
 .footer--menu ul {
     margin: 0;
     padding: 27px 0 0;
@@ -4748,11 +4234,9 @@ a.url--noticia:hover {
     line-height: 0;
     text-align: center
 }
-
 .footer--menu ul li {
     display: inline-block
 }
-
 .footer--menu ul li a {
     padding: 0 20px;
     border-right: 2px solid rgba(255, 255, 255, .9);
@@ -4763,62 +4247,51 @@ a.url--noticia:hover {
     -webkit-transition: opacity .25s;
     transition: opacity .25s
 }
-
 .footer--menu ul li a:focus,
 .footer--menu ul li a:hover {
     color: #fff;
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
 }
-
 .footer--menu ul li:last-child a {
     border-right: 0
 }
-
 .footer--copyright {
     padding: 9px 0 23px;
     text-align: center
 }
-
 .footer--copyright a {
     color: #fff;
     font-weight: 700
 }
-
 .footer--copyright a:focus,
 .footer--copyright a:hover {
     color: #fff
 }
-
 .reset-gutter,
 .reset-margin {
     margin-right: 0;
     margin-left: 0
 }
-
 .reset-gutter>[class*=col-],
 .reset-padding {
     padding-right: 0;
     padding-left: 0
 }
-
 .vc--parent {
     width: 100%;
     height: 100%;
     display: table
 }
-
 .vc--child {
     display: table-cell;
     vertical-align: middle
 }
-
 .row--vc>div,
 .vc--child-bottom {
     display: table-cell;
     vertical-align: bottom
 }
-
 .row--vc>div {
     float: none;
     vertical-align: middle

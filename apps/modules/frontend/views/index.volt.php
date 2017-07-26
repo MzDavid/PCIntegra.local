@@ -26,23 +26,13 @@
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                     </ul>
                     <ul class="nav">
-                        <li class="hidden-xs"><a href="tel:+9383814581"><i class="fa fm fa-headphones"></i>MID: (999) 9415077 | CDMX: (55) 5689 3329 | MTY: (81) 8335 2297 | PCM: (984) 873 0271</a></li>
-                        <li class="subheader--mail"><a href="mailto:ventas@nationalsoft.com.mx"><i class="fa fa-envelope"></i>  ventas@nationalsoft.com.mx</a></li>
+                        <li class="subheader--mail hidden-xs"><a href="tel:+9383814581"><i class="fa fm fa-headphones"></i>MID: (999) 9415077 | CDMX: (55) 5689 3329 | MTY: (81) 8335 2297 | PCM: (984) 873 0271</a></li>
+                        <li class="subheader--mail"><a href="mailto:ventas@nationalsoft.com.mx"><i class="fa fm fa-envelope"></i> ventas@nationalsoft.com.mx</a></li>
                     </ul>
                 </div>
             </div>
             <div class="header--topbar">
                 <div class="container">
-                    <div class="pull-left clearfix">
-                        <div class="vc--parent">
-                            <div class="vc--child">
-                                <div class="header--topbar-social pull-left hidden-xs">
-                                    <ul class="nav">
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="header--topbar-logo">
                         <a href="/"><img src="/front/img/logo.png" alt="" data-rjs="2"></a>
                     </div>
